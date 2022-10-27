@@ -28,8 +28,6 @@ int main(int argc, char **argv){
   printf("strcmp(a,c) vale %d\n", strcmp(a,c));
   printf("strcmp(c,a) vale %d\n", strcmp(c,a));
 
-
-
   return 0;
 }
 
@@ -41,6 +39,18 @@ int main(int argc, char **argv){
     - 0 se le due stringhe sono uguali
     - un valore > 0 se s1 ">" s2
     - un valore < 0 se s1 "<" s2
+
+
+a=[Fondamenti]
+b=[Fondamenti]
+c=[FONDAMENTI]
+I valori di a e b sono differenti
+a==b        vale 0
+a=0x7ffc2351b087
+b=0x7ffc2351b092
+strcmp(a,b) vale 0
+strcmp(a,c) vale 32
+strcmp(c,a) vale -32
 
 */
 
