@@ -13,8 +13,8 @@ int main(int argc, char **argv){
 
   for(int i=0; i<8; ++i)
   {
-    fp = fp + 1; // NON mi sposto di un byte ma del numero di byte occupati da un int (4 nel nostro caso)
     printf("All'indirizzo %p trovo %d\n", fp, *fp);
+    fp = fp + 1; // NON mi sposto di un byte ma del numero di byte occupati da un int (4 nel nostro caso)
   }
 
   return 0;

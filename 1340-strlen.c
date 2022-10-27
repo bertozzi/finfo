@@ -1,7 +1,6 @@
 // nuovi elementi string.h -> strlen()
 #include<stdio.h>
 #include<stdlib.h>
-
 #include<string.h> // obbligatorio per usare funzioni di stringa
 
 int main(int argc, char **argv){
