@@ -34,7 +34,7 @@ che nel pensier rinova la paura!";
     word = strtok(NULL, delimitatori);
   }
 
-  for(int j; j<i; ++j)
+  for(int j=0; j<i; ++j)
   { 
     printf("#%d \t %s\n", j, str_array[j]);
   }

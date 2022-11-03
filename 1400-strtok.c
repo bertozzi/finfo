@@ -36,6 +36,17 @@ che nel pensier rinova la paura!";
   // la strtok() ha pero' effetti collaterali di cui tener conto!
   printf("Al termine delle operazioni se stampo incipit ottengo: %s\n", incipit);
   // cosa e' successo? Perche' questo comportamento?
+
+  // stampo carattere per carattere per capire come la strtok ha modificato la stringa originale
+  for(int i=0; i<sizeof(incipit); ++i)
+  {
+    if(incipit[i] >= ' ')
+      printf("%c", incipit[i]);
+    else
+      printf("[%d]", incipit[i]);
+  }
+  printf("\n");
+
   return 0;
 }
 

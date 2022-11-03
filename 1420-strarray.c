@@ -31,6 +31,7 @@ che nel pensier rinova la paura!";
     // NUOVO ELEMENTO: nel caso di array bidimensionali se ometto il secondo indice ho l'indirizzo della riga
     str_array[i] = malloc(sizeof(char) * (strlen(word) + 1)); // alloco spazio necessario in base a quanto devo memorizzare
     strcpy(str_array[i], word); // man mano che ho una parola la ricopio nella posizione giusta nell'array
+    // strcpy(&str_array[i][0], word); // equivalente alla precedente
     mem_used += sizeof(char) * (strlen(word) + 1);
 
     word = strtok(NULL, delimitatori);
