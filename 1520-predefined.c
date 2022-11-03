@@ -10,7 +10,7 @@ int main(int argc, char **argv){
   // obiettivo del programma, stampare i vari codici ASCII indicando anche di che tipo sono
 
   for (unsigned char c = 0; c < 128; c++) { // ciclo su tutti i codici ASCII (non considero per semplicita' il codice ASCII esteso)
-    printf("Il carattere ASCII %3d [", c);
+    printf("Il codice ASCII %3d [", c);
     if (!isprint(c))
       printf("--");
     else

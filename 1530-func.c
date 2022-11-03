@@ -7,7 +7,7 @@
 void saluta(void)
 {
  printf("Benvenuto al programma di simulazione giuoco dei dadi\n");
-} // retunr non obbligatorio, termino quando incontro }
+} // return non obbligatorio, termino quando incontro }
 
 // funzione che non prende in ingresso dati e non restituisce niente
 void arrivederci(void)

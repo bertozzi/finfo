@@ -30,6 +30,7 @@ che nel pensier rinova la paura!";
   {
     // NUOVO ELEMENTO: nel caso di array bidimensionali se ometto il secondo indice ho l'indirizzo della riga
     strcpy(str_array[i], word); // man mano che ho una parola la ricopio nella posizione giusta nell'array
+    // strcpy(&str_array[i][0], word); // equivalente alla precedente
 
     word = strtok(NULL, delimitatori);
   }
