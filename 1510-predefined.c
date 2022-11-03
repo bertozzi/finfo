@@ -1,7 +1,6 @@
 // esempio di NON utilizzo delle funzioni predefinite
 #include<stdio.h>
 #include<stdlib.h>
-#include<ctype.h>
 
 
 int main(int argc, char **argv){
@@ -10,7 +9,7 @@ int main(int argc, char **argv){
 
   for (unsigned char c = 0; c < 128; c++) { // ciclo su tutti i codici ASCII (non considero per semplicita' il codice ASCII esteso)
 
-    printf("Il carattere ASCII %3d [", c);
+    printf("Il codice ASCII %3d [", c);
     if (c<' ' || c==127)
       printf("--");
     else
