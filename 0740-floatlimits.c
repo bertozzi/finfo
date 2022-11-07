@@ -5,17 +5,17 @@
 
 int main(int argc, char** argv) {
 
-    printf("Storage size for float : %zd \n", sizeof(float)); // sizeof() restituisce quanti byte occupa un tipo di dato
+    printf("Storage size for float : %ld \n", sizeof(float)); // sizeof() restituisce quanti byte occupa un tipo di dato
     printf("FLT_MAX     :   %g\n", FLT_MAX);
     printf("FLT_MIN     :   %g\n", FLT_MIN);
     printf("Number of decimal digits that can be accurately represented: %d\n", FLT_DIG );
 
-    printf("\nStorage size for double : %zd \n", sizeof(double));
+    printf("\nStorage size for double : %ld \n", sizeof(double));
     printf("DBL_MAX     :   %g\n", DBL_MAX);
     printf("DBL_MIN     :   %g\n", DBL_MIN);
     printf("Number of decimal digits that can be accurately represented: %d\n", DBL_DIG );
 
-    printf("\nStorage size for long double : %zd \n", sizeof(long double));
+    printf("\nStorage size for long double : %ld \n", sizeof(long double));
     printf("LDBL_MAX    :   %Lg\n",  LDBL_MAX);
     printf("LDBL_MIN    :   %Lg\n",  LDBL_MIN);
     printf("Number of decimal digits that can be accurately represented: %d\n", LDBL_DIG );

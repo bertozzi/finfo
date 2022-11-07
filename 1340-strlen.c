@@ -9,12 +9,12 @@ int main(int argc, char **argv){
 
 
   // stampo stringa
-  printf("a[] contiene '%s' ed e' lunga %zd caratteri\n", a, strlen(a));
+  printf("a[] contiene '%s' ed e' lunga %ld caratteri\n", a, strlen(a));
 
   // leggo stringa da tastiera
   printf("Inserisci una frase: ");
   scanf("%[^\n]", a); // la lettura termina al primo \n
-  printf("Ora a[] contiene '%s' ed e' lunga %zd caratteri\n", a, strlen(a));
+  printf("Ora a[] contiene '%s' ed e' lunga %ld caratteri\n", a, strlen(a));
 
 
   return 0;

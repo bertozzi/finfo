@@ -39,7 +39,7 @@ che nel pensier rinova la paura!";
     printf("#%d \t %s\n", j, str_array[j]);
   }
 
-  printf("Per memorizzare le stringhe ho usato %zd byte di memoria\n", sizeof(str_array));
+  printf("Per memorizzare le stringhe ho usato %ld byte di memoria\n", sizeof(str_array));
 
   return 0;
 }

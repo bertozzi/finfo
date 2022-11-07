@@ -16,7 +16,7 @@ int main(int argc, char **argv){
   else
     printf("Testa!\n");
 
-  printf("[testaocroce] vale %d e occupa %zd byte\n", testaocroce, sizeof(testaocroce));
+  printf("[testaocroce] vale %d e occupa %ld byte\n", testaocroce, sizeof(testaocroce));
 
   testaocroce = 7; //XXX ??? 
 
