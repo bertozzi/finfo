@@ -15,7 +15,7 @@ int main(int argc, char **argv){
   printf("Inserisci una frase: ");
   scanf("%[^\n]", testo);
 
-  printf("DEBUG: la frase inserita e' [%s] ed e' costituita da %zd caratteri ed e' memorizzata in un array di %zd char\n", testo, strlen(testo), sizeof(testo));
+  printf("DEBUG: la frase inserita e' [%s] ed e' costituita da %ld caratteri ed e' memorizzata in un array di %ld char\n", testo, strlen(testo), sizeof(testo));
 
   uppercase(testo);
 
@@ -33,7 +33,7 @@ int main(int argc, char **argv){
 
 void uppercase(char mystr[])
 {
-  printf("DEBUG: la frase passata alla funzione e' [%s] ed e' costituita da %zd caratteri. Il parametro della funzione ha dimensione %zd byte\n", mystr, strlen(mystr), sizeof(mystr));
+  printf("DEBUG: la frase passata alla funzione e' [%s] ed e' costituita da %ld caratteri. Il parametro della funzione ha dimensione %ld byte\n", mystr, strlen(mystr), sizeof(mystr));
 
   for(int i=0; i<strlen(mystr); ++i)
     if(islower(mystr[i]))

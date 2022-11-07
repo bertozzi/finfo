@@ -9,7 +9,7 @@ int main(int argc, char **argv){
 
   fp=a;
 
-  printf("Ora fp vale %p, e ha dimensione %zd mentre a[] ha dimensione %zd\n", fp, sizeof(fp), sizeof(a));
+  printf("Ora fp vale %p, e ha dimensione %ld mentre a[] ha dimensione %ld\n", fp, sizeof(fp), sizeof(a));
 
   for(int i=0; i<8; ++i)
   {

@@ -10,10 +10,10 @@ int main(int argc, char **argv){
 
   printf("\n");
 
-  printf("sizeof(a)              = %zd\n",  sizeof(a));
-  printf("sizeof(a[0])           = %zd\n",  sizeof(a[0]));
-  printf("sizeof(int)            = %zd\n",  sizeof(a[0]));
-  printf("sizeof(a)/sizeof(a[0]) = %zd\n",  sizeof(a)/sizeof(a[0]));
+  printf("sizeof(a)              = %ld\n",  sizeof(a));
+  printf("sizeof(a[0])           = %ld\n",  sizeof(a[0]));
+  printf("sizeof(int)            = %ld\n",  sizeof(a[0]));
+  printf("sizeof(a)/sizeof(a[0]) = %ld\n",  sizeof(a)/sizeof(a[0]));
 
   printf("\n");
 

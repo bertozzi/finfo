@@ -6,8 +6,8 @@ set_property(GLOBAL PROPERTY RULE_MESSAGES OFF)
 
 project(esempi)
 
-add_compile_options(-Wall -g -O0)
-set(CMAKE_C_COMPILER "c99")
+add_compile_options(-Wall -g -O0 -std=c99)
+set(CMAKE_C_COMPILER "gcc")
 
 if(NOT INCLUDE_INSTALL_DIR)
     set(INCLUDE_INSTALL_DIR include/${PACKAGE_NAME_VERSION})

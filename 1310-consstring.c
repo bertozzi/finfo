@@ -10,7 +10,7 @@ int main(int argc, char **argv){
 
   // qual e' la dimensione di quell'array?
 
-  printf("L'array 'lamiaprimastringa' contiene %zd elementi\n", sizeof(lamiaprimastringa)/sizeof(char));
+  printf("L'array 'lamiaprimastringa' contiene %ld elementi\n", sizeof(lamiaprimastringa)/sizeof(char));
   printf("Che sono:\n");
   for(int i=0; i<sizeof(lamiaprimastringa)/sizeof(char); ++i)
   {

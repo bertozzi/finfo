@@ -17,8 +17,8 @@ int main(int argc, char **argv){
   printf("Il primo e il secondo elemento dell'array contengono %d e %d\n", pa[0], pa[1]);  // anche per i puntatori posso usare le []
   printf("Il primo elemento dell'array contiene %d\n", *a);                                // vale anche il viceversa!
   
-  printf("sizeof(array)     restituisce %zd\n", sizeof(a));    // sizeof() si comporta pero' diversamente
-  printf("sizeof(puntatore) restituisce %zd\n", sizeof(pa));
+  printf("sizeof(array)     restituisce %ld\n", sizeof(a));    // sizeof() si comporta pero' diversamente
+  printf("sizeof(puntatore) restituisce %ld\n", sizeof(pa));
 
   return 0;
 }
