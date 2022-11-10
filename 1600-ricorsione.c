@@ -3,7 +3,7 @@
 #include<stdlib.h>
 
 
-unsigned long long fact(unsigned long long n){
+unsigned long long fact(unsigned int n){
 
   if(n==1 || n==0) return 1;   // condizione di uscita
 

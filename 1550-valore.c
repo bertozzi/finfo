@@ -26,3 +26,17 @@ int main(int argc, char **argv){
   return 0;
 }
 
+/*
+OUTPUT:
+
+Al giro #1, x vale 1
+Al giro #2, x vale 1
+Al giro #3, x vale 1
+Al giro #4, x vale 1
+Al giro #5, x vale 1
+Al giro #6, x vale 1
+Al giro #7, x vale 1
+Al giro #8, x vale 1
+Al giro #9, x vale 1
+
+*/
