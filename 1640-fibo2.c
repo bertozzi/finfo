@@ -11,7 +11,7 @@ int main(int argc, char **argv){
   printf("Inserisci l'indice del numero di Fibonacci da calcolare: ");
   scanf("%u", &n);
 
-  printf("Il numero di Fibonacci di indice %u vsle %lu\n", n, fibonacci(n));
+  printf("Il numero di Fibonacci di indice %u vale %lu\n", n, fibonacci(n));
 
 
   return 0;

@@ -26,11 +26,6 @@ int main(int argc, char **argv){
   return 0;
 }
 
-
-
-
-
-
 void uppercase(char *mystr)
 {
   printf("DEBUG: la frase passata alla funzione e' [%s] ed e' costituita da %ld caratteri. Il parametro della funzione ha dimensione %ld byte\n", mystr, strlen(mystr), sizeof(mystr));
