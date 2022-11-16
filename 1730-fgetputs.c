@@ -31,9 +31,11 @@ int main(int argc, char **argv){
   char buffer[10]; // leggo fino a 100 caratteri alla volta
   int i = 0; // lo uso per contare il numero di operazioni
 
+  // char *fgets(char *s, int size, FILE *stream);
   while( fgets(buffer, 10, fileinput) != NULL) // fgets() restituisce NULL se non riesce a leggere nulla
   {
     printf("Ho letto [%s]\n", buffer);
+    //  int fputs(const char *s, FILE *stream);
     fputs(buffer, fileoutput); // scrivo quanto letto nel secondo file
     ++i;
   }

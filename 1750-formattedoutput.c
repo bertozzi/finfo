@@ -8,9 +8,7 @@ int main(int argc, char **argv){
 
   int i;
 
-
   FILE *fp;
-
 
   fp=fopen("files/stringhe.txt", "w");
   if(!fp)
@@ -25,8 +23,6 @@ int main(int argc, char **argv){
   }
 
   fclose(fp);
-
-
 
   return 0;
 }

@@ -31,10 +31,12 @@ int main(int argc, char **argv){
   int c; // devo usare int per EOF
   int i = 0; // lo uso per contare il numero di operazioni
 
+  //   int fgetc(FILE *stream);
   while( (c = fgetc(fileinput)) != EOF) // fgetc() restituisce EOF se arriviamo alla fine del file oppure il codice ASCII del carattere letto
   {
     printf("Ho letto [%c]\n", c);
-    fputc(c, fileoutput); // scrivo quanto letto nel second file
+    //     int fputc(int c, FILE *stream);
+    fputc(c, fileoutput); // scrivo quanto letto nel secondo file
     ++i;
   }
 
