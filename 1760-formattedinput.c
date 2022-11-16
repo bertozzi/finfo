@@ -4,7 +4,7 @@
 
 int main(int argc, char **argv){
 
-  FILE *fp=fopen("files/zz.txt", "r"); // e' lo stesso file precedentemente scritto
+  FILE *fp=fopen("files/stringhe.txt", "r"); // e' lo stesso file precedentemente scritto
   if(!fp)
   {
     printf("Errore non riesco ad aprire il file!\n");
