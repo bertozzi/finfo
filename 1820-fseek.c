@@ -30,7 +30,7 @@ int main(int argc, char **argv){
   fread(&w, sizeof(short), 1, bf); // leggo un singolo short (2 byte)
   fread(&h, sizeof(short), 1, bf); // leggo un singolo short (2 byte)
 
-  printf("Il file ha dimensioni %dx%d\n", w, h);
+  printf("L'immagine GIF ha dimensioni %dx%d\n", w, h);
 
   position = ftell(bf);
   printf("Dopo aver letto due short sono alla posizione %ld\n", position);

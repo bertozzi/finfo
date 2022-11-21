@@ -13,7 +13,7 @@ int main(int argc, char **argv){
   FILE *fp=fopen("files/trees.csv", "r");
   if(!fp)
   {
-    printf("Errore non riesco ad aprire il file!\n");
+    perror("Errore non riesco ad aprire il file");
     exit(1);
   }
 
