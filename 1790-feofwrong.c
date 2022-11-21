@@ -11,7 +11,7 @@ int main(int argc, char **argv){
     exit(1);
   }
 
-  char parola[100]; // array sufficientemente "largo"
+  char parola[1000]; // array sufficientemente "largo"
 
   // feof() restituisce "true" se raggiunta fine file
   // XXX ma solo DOPO che ho tentato di leggere oltre la fine del file...

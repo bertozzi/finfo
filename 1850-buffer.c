@@ -17,10 +17,10 @@ int main(int argc, char **argv){
   // presenza dello '\n' 
   // posso rimuovere usando un secondo getchar()
 
-  // getchar();  // remove the \n
+  //getchar();  // remove the \n
 
   // Ma c'e' da fidarsi sul fatto che l'utente abbia premuto un solo tasto? -> NO 
-  // while(getchar()!='\n');  // remove the whole keyboard buffer up to the first '\n'
+  while(getchar()!='\n');  // remove the whole keyboard buffer up to the first '\n'
 
 
 

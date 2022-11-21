@@ -17,7 +17,7 @@ int main(int argc, char **argv){
   bf=fopen(myfile, "rb"); // notare la 'b'
   if(!bf)
   {
-    printf("Errore non riesco ad aprire il file!\n");
+    perror("Errore non riesco ad aprire il file");
     exit(1);
   }
 
@@ -52,7 +52,7 @@ int main(int argc, char **argv){
 
   }
 
-    printf("\n-------------------------------+------------\n");
+  printf("\n-------------------------------+------------\n");
 
   return 0;
 }
