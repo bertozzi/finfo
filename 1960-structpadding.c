@@ -25,3 +25,10 @@ int main(int argc, char **argv){
   return 0;
 }
 
+/*
+La memoria occupata da una struct di tipo mionodo e' di 8 byte
+I singoli elementi occupano 6 byte
+a si trova a 0 byte dall'inizio della struct
+b si trova a 1 byte dall'inizio della struct
+c si trova a 4 byte dall'inizio della struct
+*/
