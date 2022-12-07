@@ -16,8 +16,6 @@ int main(int argc, char **argv){
 
    int a[n]; // VLA e' comunque limitato come dimensioni massime
 
-   srand(time(0));
-
    // genera array, banalmente metto nel mio array tutti i numeri da 1 a n
    for (int i=0; i<n; i++)
      a[i]=(i+1);
