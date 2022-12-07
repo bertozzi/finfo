@@ -10,40 +10,38 @@ int main(int argc, char **argv){
 
   srand(time(0));
 
-   int n;
-   printf("Quanti elementi vuoi generare? ");
-   scanf("%d", &n);
+  int n;
+  printf("Quanti elementi vuoi generare? ");
+  scanf("%d", &n);
 
-   int a[n]; // VLA e' comunque limitato come dimensioni massime
+  int a[n]; // VLA e' comunque limitato come dimensioni massime
 
-   srand(time(0));
+  // genera array ordinato, banalmente metto nel mio array numeri sempre crescenti sommando al precedente elemento uno step casuale
+  a[0] = 1;
+  for (int i=1; i<n; i++)
+    a[i]=a[i-1] + rand()%10 + 1;
 
-   // genera array ordinato, banalmente metto nel mio array numeri sempre crescenti sommando al precedente elemento uno step casuale
-   a[0] = 1;
-   for (int i=1; i<n; i++)
-     a[i]=a[i-1] + rand()%10 + 1;
+  // visualizza array mescolato
+  printf("ARRAY GENERATO\n");
+  stampaarray(a,n);
 
-   // visualizza array mescolato
-   printf("ARRAY GENERATO\n");
-   stampaarray(a,n);
+  int k;
+  printf("Dimmi che numero vuoi ricercare: ");
+  scanf("%d", &k);
 
-   int k;
-   printf("Dimmi che numero vuoi ricercare: ");
-   scanf("%d", &k);
+  // invoco ordinamento
+  int *risultato = bsearch(&k, a, n, sizeof(a[0]), mycomp); 
 
-   // invoco ordinamento
-   int *risultato = bsearch(&k, a, n, sizeof(a[0]), mycomp); 
+  if(risultato)
+  {
+    printf("Il numero ricercato si trova all'indice %ld\n", risultato - a);
+  }
+  else
+  {
+    printf("Numero non presente nell'array\n");
+  }
 
-   if(risultato)
-   {
-     printf("Il numero ricercato si trova all'indice %ld\n", risultato - a);
-   }
-   else
-   {
-     printf("Numero non presente nell'array\n");
-   }
-
-   return 0;
+  return 0;
 }
 
 void stampaarray(int *a, int n){
@@ -63,14 +61,14 @@ void stampaarray(int *a, int n){
       printf("%5d ",a[i]);
       printf((i+1)%15?"":"\n");
     }
-     printf("  ...\n");
+    printf("  ...\n");
     for (i=n-30; i<n; i++){
       printf("%5d ",a[i]);
       printf((n-i-1)%15?"":"\n");
     }
   }
 
-   printf("\n");
+  printf("\n");
 }
 
 // deve restituire valore < = > 0 a seconda del confronto, occorre cast visto che obbligatorio usare void*
