@@ -37,7 +37,7 @@ che nel pensier rinova la paura!";
     word = strtok(NULL, delimitatori);
   }
 
-  for(int j; j<i; ++j)
+  for(int j=1; j<i; ++j)
   { 
     printf("#%d \t %s\n", j, str_array[j]);
     free(str_array[j]); // libero memoria visto che non la uso piu'
