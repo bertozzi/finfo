@@ -44,6 +44,7 @@ che nel pensier rinova la paura!";
     printf("#%d \t %s\n", j, str_array[j]);
     free(str_array[j]); // libero memoria visto che non la uso piu'
   }
+  free(str_array);
 
   printf("Per memorizzare le stringhe ho usato %d byte di memoria\n", mem_used);
 
