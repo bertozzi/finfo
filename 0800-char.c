@@ -5,12 +5,16 @@
 int main(int argc, char **argv){
 
   char c;
+  unsigned int code;
 
-  printf("Inserisci un simbolo da tastiera: ");
-  scanf("%c", &c);
+  printf("Inserisci il codice ASCII di un carattere: ");
+  scanf("%u", &code);
 
-  printf("Il simbolo [%c] ha codice ASCII %d\n", c, c);
- 
+  if(code<=255)
+  {
+    c=code;
+    printf("Il codice ASCII %u corrisponde al carattere \"%c\"\n", code, c);
+  }
 
 
   return 0;
