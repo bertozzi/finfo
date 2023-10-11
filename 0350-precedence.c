@@ -1,3 +1,4 @@
+// precedenza e associativita' operatori
 #include<stdio.h>
 #include<stdlib.h>
 
