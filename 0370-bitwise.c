@@ -11,14 +11,14 @@ int main(int argc, char **argv){
 
   printf("Il numero inserito e' %d e in binario vale ", a);
 
-  printf("%d", (a>>7)&1 ); // in questo caso sposto l'ottavo bit nella posizione 0 ovvero come 'bit meno significativo'. Tramite l'and bit a bit tengo solo lui
-  printf("%d", (a>>6)&1 );
-  printf("%d", (a>>5)&1 );
-  printf("%d", (a>>4)&1 );
-  printf("%d", (a>>3)&1 );
-  printf("%d", (a>>2)&1 );
-  printf("%d", (a>>1)&1 );
-  printf("%d", (a>>0)&1 );
+  printf("%d", (a >> 7) & 1 ); // in questo caso sposto l'ottavo bit nella posizione 0 ovvero come 'bit meno significativo'. Tramite l'and bit a bit tengo solo lui
+  printf("%d", (a >> 6) & 1 );
+  printf("%d", (a >> 5) & 1 );
+  printf("%d", (a >> 4) & 1 );
+  printf("%d", (a >> 3) & 1 );
+  printf("%d", (a >> 2) & 1 );
+  printf("%d", (a >> 1) & 1 );
+  printf("%d", (a >> 0) & 1 ); // lo shift di 0 posizioni lascia, ovviamente, tutto invariato
 
   // piu' avanti scopriremo quanto questo codice e' brutto, ma per ora non abbiamo parlato di cicli...
 
