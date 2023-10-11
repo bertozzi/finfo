@@ -12,9 +12,9 @@ int main(int argc, char **argv){
 
   if (n < 10  ||  n > 20)  // costrutto if()-else, ne parleremo meglio piu' avanti
     //XXX sono operatori, (10 <= n <= 20) NON funzionerebbe
-    printf("Grazie!\n");
-  else 
     printf("Il tuo numero non e' compreso nell'intervallo 10-20\n");
+  else 
+    printf("Grazie!\n");
 
 
 

@@ -13,7 +13,7 @@ int main(int argc, char **argv){
   printf("Inserisci due valori per la generazione di numeri casuali: ");
   scanf("%d%d", &a, &b);
 
-  int random = a + rand()%(b-a); // ATTENZIONE manca controllo per b > a !
+  int random = a + rand()%(b-a+1); // ATTENZIONE manca controllo per b > a !
 
   printf("Ho estratto %d\n", random);
 
