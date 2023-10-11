@@ -20,17 +20,18 @@ int main(int argc, char** argv) {
     printf("LDBL_MIN    :   %Lg\n",  LDBL_MIN);
     printf("Number of decimal digits that can be accurately represented: %d\n", LDBL_DIG );
 
-    float        fl  = 1.0f/7.0f;  // 1/7, in formato decimale, e' un numero periodico (0.142857) a cui seguono infinite ripetizioni di 142857
-    double       db  = 1.0/7.0;
-    long double  ldb = 1.0L/7.0L;
+    float        fl  = 1.1f; // 23 bit mantissa
+    double       db  = 1.1;  // 54 bit mantissa
+    long double  ldb = 1.1L; // 80 bit mantissa
 
     printf("\nPrecision Examples:\n\n");
-    printf("float       -> %.30f\n",  fl);
+    printf("float       -> %.30f \t %f\n",  fl, fl);
     printf("                 ******\n");
-    printf("double      -> %.30lf\n", db);
+    printf("double      -> %.30lf \t %lf\n", db, db);
     printf("                 ***************\n");
-    printf("long double -> %.30Lf\n", ldb);
+    printf("long double -> %.30Lf \t %Lf\n", ldb, ldb);
     printf("                 ******************\n");
+
 
     return 0;
 }
