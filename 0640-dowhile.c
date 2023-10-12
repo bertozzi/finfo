@@ -25,6 +25,17 @@ int main(int argc, char **argv){
 
   printf("%d\n", a);
 
+  /* tecnicamente ottenibile anche con un while() ma occorre piu' codice:
+
+  r = a % b;
+  a = b;
+  while(r>0)
+  {
+    a = b;
+    b = r;
+    r = a % b;
+  }
+  */
 
 
   return 0;

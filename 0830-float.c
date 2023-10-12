@@ -20,5 +20,5 @@ int main(int argc, char** argv) {
 
   printf("In formato esadecimale sarebbero:    %A %A %LA\n", fl, db, ldb);   // never used in my whole life!
 
-    return 0;
+  return 0;
 }
