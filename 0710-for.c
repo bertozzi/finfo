@@ -11,7 +11,7 @@ int main(int argc, char **argv){
 
   printf("La somma dei numeri da 1 a %d vale ", i);
 
-  for(; i>0; ++i) // inutile inizializzare i, contiene gia' il valore necessario
+  for(; i>0; --i) // inutile inizializzare i, contiene gia' il valore necessario
     sum +=i;
 
   printf("%d\n", sum);
