@@ -1,4 +1,4 @@
-// il tipo char
+// lettura del tipo char da tastiera
 #include<stdio.h>
 #include<stdlib.h>
 
