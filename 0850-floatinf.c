@@ -15,3 +15,10 @@ int main(int argc, char **argv){
   return 0;
 }
 
+/*
+isinf(0.0)         =  0   (0.000000)
+isinf(-10/0.0)     = -1   (-inf)
+isinf(DBL_MIN/2.0) =  0   (0.000000)
+isinf(1.0)         =  0   (1.000000)
+isinf(exp(800))    =  1   (inf)
+*/
