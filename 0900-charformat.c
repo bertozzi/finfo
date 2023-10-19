@@ -1,4 +1,4 @@
-// il tipo char
+// il tipo char, specificatore di formato
 #include<stdio.h>
 #include<stdlib.h>
 
