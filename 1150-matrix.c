@@ -3,7 +3,7 @@
 #include<stdlib.h>
 #include<math.h>
 
-// chiede ad utente valori di una matrice 2x2 e se possibile ne calcola e stampa l'inversa
+// chiede ad utente valori di una matrice 2x2 e, se possibile, ne calcola e stampa l'inversa
 int main(int argc, char **argv){
 
   float m1[2][2];

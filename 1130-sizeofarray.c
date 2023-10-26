@@ -12,7 +12,8 @@ int main(int argc, char **argv){
 
   printf("sizeof(a)              = %ld\n",  sizeof(a));
   printf("sizeof(a[0])           = %ld\n",  sizeof(a[0]));
-  printf("sizeof(int)            = %ld\n",  sizeof(a[0]));
+  printf("sizeof(a[3])           = %ld\n",  sizeof(a[3]));
+  printf("sizeof(int)            = %ld\n",  sizeof(int));
   printf("sizeof(a)/sizeof(a[0]) = %ld\n",  sizeof(a)/sizeof(a[0]));
 
   printf("\n");
