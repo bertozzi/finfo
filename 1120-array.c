@@ -10,8 +10,6 @@ int main(int argc, char **argv){
   int b[SIZE] = {1,2,3};                // inizializzazione parziale, gli elementi dall'indice 3 in avanti valgono 0
   int c[SIZE] = {0};                    // inizializzazione a 0
   int d[]     = {1,2,3,4,5,6,7,8,9,10}; // inizializzazione completa con omissione dimensioni
-
-
   int g[SIZE];                          // non inizializzato
 
   printf("I valori di a[] sono: ");
