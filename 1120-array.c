@@ -1,53 +1,48 @@
-// inizializzazione array, differenti casi
+// array monodimensionali
 #include<stdio.h>
 #include<stdlib.h>
 
-#define SIZE (10)
 
 int main(int argc, char **argv){
 
-  int a[SIZE] = {1,2,3,4,5,6,7,8,9,10}; // inizializzazione completa
-  int b[SIZE] = {1,2,3};                // inizializzazione parziale, gli elementi dall'indice 3 in avanti valgono 0
-  int c[SIZE] = {0};                    // inizializzazione a 0
-  int d[]     = {1,2,3,4,5,6,7,8,9,10}; // inizializzazione completa con omissione dimensioni
-  int g[SIZE];                          // non inizializzato
+  int numbers[100]; // array monodimensionale di 100 int 
+  unsigned int n;
 
-  printf("I valori di a[] sono: ");
-  for(int i=0; i<SIZE; ++i)
-    printf("%2d ", a[i]);
-  printf("\n");
+  printf("Quanti numeri vuoi sommare (max 100)? ");
+  scanf("%u", &n);
 
-  printf("I valori di b[] sono: ");
-  for(int i=0; i<SIZE; ++i)
-    printf("%2d ", b[i]);
-  printf("\n");
+  if(n<=100)
+  {
+    // azzero l'array (non serve!)
+    for(int i=0; i<100; ++i) // abituarsi a cicli che partono da 0
+      numbers[i] = 0;  // accesso a singolo elemento tramite indice 
+    
+    // li leggo da tastiera
+    for(int i=0; i<n; ++i) 
+    {
+      printf("Inserisci il numero intero #%d: ", i+1);
+      scanf("%d", &numbers[i]); // per leggere con scanf() uso la & come per una variabile "normale"
+    }
 
-  printf("I valori di c[] sono: ");
-  for(int i=0; i<SIZE; ++i)
-    printf("%2d ", c[i]);
-  printf("\n");
+    // li stampo
+    printf("I numeri inseriti sono: ");
+    for(int i=0; i<n; ++i)
+    {
+      printf("%d ", numbers[i]); 
+    }
 
-  printf("I valori di d[] sono: ");
-  for(int i=0; i<SIZE; ++i)
-    printf("%2d ", d[i]);
-  printf("\n");
 
-  printf("I valori di g[] sono: ");
-  for(int i=0; i<SIZE; ++i)
-    printf("%2d ", g[i]);
-  printf("\n");
+    // calcolo la somma (di fatto potevo farlo in uno dei cicli precedenti)
+    int sum = 0;
+    for(int i=0; i<n; ++i)
+      sum += numbers[i];
+
+    printf("\nla loro somma e': %d\n", sum);
+
+  } // if(n<=100)
+
+
 
   return 0;
 }
-
-/* 
-   ESEMPIO OUTPUT
-
-I valori di a[] sono:  1  2  3  4  5  6  7  8  9 10 
-I valori di b[] sono:  1  2  3  0  0  0  0  0  0  0 
-I valori di c[] sono:  0  0  0  0  0  0  0  0  0  0 
-I valori di d[] sono:  1  2  3  4  5  6  7  8  9 10 
-I valori di g[] sono: -195493144 32750 601474432 21947  0  0 601473184 21947 2147008320 32765 
-
-*/
 
