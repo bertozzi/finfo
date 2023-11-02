@@ -1,4 +1,4 @@
-// allocazione dinamica memoria con malloc() e free()
+// allocazione dinamica memoria con malloc() e free(), controllo errore allocazione
 #include<stdio.h>
 #include<stdlib.h>
 

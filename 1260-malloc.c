@@ -1,4 +1,4 @@
-// malloc():  rivisitazione problema durata automatica VLA
+// introduzione a malloc() e free(): rivisitazione problema durata automatica VLA
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -12,7 +12,7 @@ int *genera_array_lanci(int n)
     v[i]=rand()%6+1;
 
   return v;
-}
+} // anche quando la funzione termina l'area allocata con malloc() rimane e non viene distrutta come nel caso dei VLA
 
 int main(int argc, char **argv){
 

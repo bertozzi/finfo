@@ -1,4 +1,4 @@
-// Variable Length Array: durata automatica
+// Variable Length Array: problema durata automatica
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -12,13 +12,13 @@ int *genera_array_lanci(int n)
     v[i]=rand()%6+1;
 
   return v;
-}
+} // l'array v[] e' locale alla funzione. Viene quindi distrutto quando la funzione termina. Quindi l'indirizzo di memoria restituito non e' piu' utilizzabile
 
 int main(int argc, char **argv){
 
   int n;
 
-  printf("Quanti lanci di dado vuoi simulare? "); // era "Quanti numeri vuoi sommare (max 100)? "
+  printf("Quanti lanci di dado vuoi simulare? "); 
   scanf("%d", &n);
 
   int *lanci=genera_array_lanci(n);
