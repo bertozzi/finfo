@@ -8,6 +8,7 @@ int main(int argc, char **argv){
   int b;
   char c;
   float d;
+  double e[100];
 
   printf("Gli indirizzi in memoria delle variabili sono:\n");
 
@@ -15,6 +16,7 @@ int main(int argc, char **argv){
   printf(" b si trova in %p (%ld byte)\n", &b, sizeof(b));
   printf(" c si trova in %p (%ld byte)\n", &c, sizeof(c));
   printf(" d si trova in %p (%ld byte)\n", &d, sizeof(d));
+  printf(" e si trova in %p (%ld byte)\n", &e, sizeof(e)); //  si noti come per gli array non occorre usare & 
 
 
 
