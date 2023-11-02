@@ -23,4 +23,13 @@ int main(int argc, char **argv){
 
   return 0;
 }
+/*
 
+Inserisci un numero intero positivo: 200
+Indirizzo della variabile locale            0x7ffc31dbe818
+Indirizzo del VLA                           0x7ffc31dbe4e0
+Indirizzo restituito da malloc()            0x55d555b7aac0
+Indirizzo della variabile globale           0x55d554cc5014
+Indirizzo della main()                      0x55d554cc21a9
+
+*/

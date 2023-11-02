@@ -6,7 +6,7 @@ int a;
 
 int main(int argc, char **argv){
 
-  float x=3.14;
+  float x = 3.14;
 
   float *px;
 
@@ -22,5 +22,11 @@ int main(int argc, char **argv){
   return 0;
 }
 
-
+/*
+L'indirizzo di x  e'       0x7fffaf9976cc
+L'indirizzo di px e'       0x7fffaf9976d0
+px contiene                (nil)
+dopo assegnamento px vale  0x7fffaf9976cc
+*px mi restituisce         3.140000
+*/
 

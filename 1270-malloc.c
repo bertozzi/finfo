@@ -27,6 +27,8 @@ int main(int argc, char **argv){
   for(int i=0; i<n; ++i)
     printf(" %d", lanci[i]);
 
+  free(lanci);
+
   printf("\n");
 
   return 0;
