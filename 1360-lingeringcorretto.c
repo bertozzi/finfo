@@ -1,4 +1,4 @@
-// esempio lingering pointer
+// esempio lingering pointer corretto
 // lingering -> remaining present although waning or gradually dying
 #include<stdio.h>
 #include<stdlib.h>
@@ -16,8 +16,15 @@ char *readline(void)
     ++i;
   }
   while(c != '\n');
+
+  char *nbuffer = malloc(i*sizeof(char)); // alloco nuovo buffer e lo dimensiono in base al numero di caratteri letti
+  while(i>=0)
+  {
+    --i;
+    nbuffer[i] = tmp[i];
+  }
   
-  return tmp; // termina la funzione. Variabili locali come tmp vengono DISTRUTTE
+  return nbuffer; // nbuffer viene effettivamente distrutto, tuttavia il suo contenuto viene restituito e sopratutto cio' che avevo allocato con malloc() rimane
 }
 
 
@@ -31,6 +38,10 @@ int main(int argc, char **argv){
   {
     printf("%c", frase[i++]);
   }while(frase[i] != '\n');
+
+  printf("\n");
+
+  free(frase);
     
   return 0;
 }
