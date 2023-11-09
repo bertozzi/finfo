@@ -1,4 +1,4 @@
-// strtok()
+// uso di strtok()
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -22,7 +22,7 @@ che nel pensier rinova la paura!";
   char *word;
 
 
-  printf("La stringa da spezzettare e':\n%s\ne si trova all'indirizzo %p\nI suoi elementi sono:\n", incipit, incipit);
+  printf("La stringa da spezzettare e':\n%s\ne si trova all'indirizzo %p\nContiene:\n", incipit, incipit);
 
   int i=0;
   word = strtok(incipit, delimitatori);
