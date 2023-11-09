@@ -22,7 +22,7 @@ che nel pensier rinova la paura!";
   // 1. dimensionare quante stringhe devo gestire
   // 2. dimensionare la massima lunghezza che devo gestire per una stringa
 
-  char str_array[100][25];   // con questo array posso memorizzare fino a 100 strimghe di massimo 24 caratteri
+  char str_array[100][25];   // con questo array posso memorizzare fino a 100 stringhe di massimo 24 caratteri
 
   int i;
   word = strtok(incipit, delimitatori);
