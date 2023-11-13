@@ -14,7 +14,7 @@ int main(int argc, char **argv){
   // leggo stringa da tastiera
   printf("Inserisci una frase: ");
   scanf("%[^\n]", a); // la lettura termina al primo \n
-  printf("Ora a[] contiene '%s' ed e' lunga %ld caratteri\n", a, strlen(a));
+  printf("Ora a[] contiene '%s' ed e' lunga %lu caratteri\n", a, strlen(a)); //ATTENZIONE: in laboratorio %u
 
 
   return 0;

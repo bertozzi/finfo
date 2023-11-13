@@ -5,7 +5,7 @@
 
 
 // questa funzione crea solo l'array leggendo da tastiera
-int *readline(void)
+char *readline(void)
 {
   char tmp[1000]; // sto largo...
   fscanf("%[^\n]", tmp); // leggo linea
