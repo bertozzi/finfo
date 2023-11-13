@@ -15,7 +15,7 @@ int main(int argc, char **argv){
   printf("Inserisci una frase: ");
   scanf("%[^\n]", testo);
 
-  printf("DEBUG: la frase inserita e' [%s] ed e' costituita da %ld caratteri ed e' memorizzata in un array di %ld char\n", testo, strlen(testo), sizeof(testo));
+  printf("DEBUG: la frase inserita e' [%s] ed e' costituita da %lu caratteri ed e' memorizzata in un array di %lu char\n", testo, strlen(testo), sizeof(testo));
 
   uppercase(testo);
 
