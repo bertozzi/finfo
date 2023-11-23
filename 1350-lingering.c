@@ -7,8 +7,15 @@
 // questa funzione crea solo l'array leggendo da tastiera
 char *readline(void)
 {
-  char tmp[1000]; // sto largo...
-  fscanf("%[^\n]", tmp); // leggo linea
+  char c, tmp[1000]; // sto largo...
+  int i=0;
+  do
+  {
+    scanf("%c", &c); // leggo carattere per carattere
+    tmp[i] = c;
+    ++i;
+  }
+  while(c != '\n');
   
   return tmp; // termina la funzione. Variabili locali come tmp vengono DISTRUTTE
 }
@@ -18,7 +25,12 @@ int main(int argc, char **argv){
 
   printf("Inserisci una frase: ");
   char *frase=readline();
-  printf("Hai inserito: %s\n", frase);
+  int i = 0;
+  printf("Hai inserito: ");
+  do
+  {
+    printf("%c", frase[i++]);
+  }while(frase[i] != '\n');
     
   return 0;
 }
