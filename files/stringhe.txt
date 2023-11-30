@@ -1,4 +1,4 @@
 #0: pippo
-#1: Paperino
+#1: paperino
 #2: pluto
 #3: gastone
