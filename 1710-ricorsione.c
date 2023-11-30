@@ -5,9 +5,18 @@
 
 unsigned long long fact(unsigned int n){
 
-  if(n==1 || n==0) return 1;   // condizione di uscita
+  printf("DEBUG: sono stata invocata con n=%u\n", n);
 
-  return n*fact(n-1);
+  if(n==1 || n==0)
+  {
+    printf("DEBUG: restituisco 1\n");
+    return 1;   // condizione di uscita
+  }
+
+  unsigned long long risultato = n*fact(n-1);
+  printf("DEBUG: restituisco %llu\n", risultato);
+
+  return risultato;
 }
 
 int main(int argc, char **argv){

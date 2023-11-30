@@ -20,7 +20,7 @@ int main(int argc, char **argv){
 #define NGRANDE 2000
 unsigned long fibonacci(unsigned long n)
 {
-  static unsigned long Fibos[NGRANDE]={0,1}; // stati rende questa variabile a durata fissa
+  static unsigned long Fibos[NGRANDE]={0,1}; // static rende questa variabile a durata fissa
 
   if(!n) return 0;
   if(Fibos[n]) return Fibos[n]; // se l'ho gia' calcolato inutile ricalcolarlo!
