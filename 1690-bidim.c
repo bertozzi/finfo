@@ -9,6 +9,7 @@
 
 #define SIZE 8
 
+// DIMENSIONI NOITE A PRIORI
 // questa funzione stampa solamente il contenuto di un array di dimensioni ben definite
 // al momento della compilazione
 void stampa(int scacchiera[SIZE][SIZE])
@@ -23,9 +24,10 @@ void stampa(int scacchiera[SIZE][SIZE])
   }
 }
 
+// USO VLA
 // se non conosco le dimensioni a priori allora posso sfruttare
 // i VLA se il mio compilatore li ammette
-void stampa_vla(int righe, int colonne, int scacchiera[righe][colonne]) // nell'elenco dei parametri l'array DEVE essere dopo le dimensioni
+void stampa_vla(int righe, int colonne, int scacchiera[righe][colonne]) // nell'elenco dei parametri l'array DEVE essere DOPO le dimensioni
 {
   for(int i = 0; i < colonne; ++i)
   {
@@ -37,6 +39,7 @@ void stampa_vla(int righe, int colonne, int scacchiera[righe][colonne]) // nell'
   }
 }
 
+// PUNTATORI A PUNTATORI
 // in maniera piu' generale posso usare
 // array di array ovvero puntatori a puntatori
 void stampa_punct(int *scacchiera, int righe, int colonne) // ma comunque devo passare lo stesso le dimensioni in qualche modo...
