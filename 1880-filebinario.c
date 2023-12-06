@@ -36,7 +36,7 @@ int main(int argc, char **argv){
     printf("\n");
     for(j=0; j< 10; ++j) // in questo ciclo stampo i valori esadecimali
     {
-      printf("%2x ", buffer[i+j]);
+      printf("%02x ", buffer[i+j]);
     }
 
     printf(" | ");
