@@ -25,3 +25,12 @@ int main(int argc, char **argv){
   return 0;
 }
 
+/* NOTE
+   questo e' solo un esempio di sintassi. 
+   Quello che va capito (oltre alla sintassi) e' che una volta
+   che ho un puntatore ad una determinata funzione e' che posso usarlo per
+   invocare quella funzione.
+   Di fatto l'uso principale dei puntatori a funzione e' esattamente quello di usarli
+   per generalizzare il codice ad esempio per le cosiddette "callback"
+   ovvero poter passare ad una funzione non solo dati ma un "blocco" di codice
+   */
