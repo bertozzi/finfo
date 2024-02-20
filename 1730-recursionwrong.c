@@ -1,4 +1,4 @@
-// errore, la condizione d'uscitra non e' detto si verifichi
+// errore, la condizione d'uscita non e' detto si verifichi
 #include<stdio.h>
 #include<stdlib.h>
 
