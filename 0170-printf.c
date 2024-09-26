@@ -22,6 +22,7 @@ int main(int argc, char **argv){
   printf("%010d m\n",   raggio);
   printf("%+10d m\n",   raggio);
 
+  printf("Per stampare solo la parte intera %.0f\n", pi);
 
   return 0;
 }
