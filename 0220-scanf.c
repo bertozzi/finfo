@@ -1,4 +1,4 @@
-// scanf e spazi in stringa di formato
+// scanf e letture multiple
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -8,7 +8,7 @@ int main(int argc, char **argv){
 
   printf("Inserisci tre numeri interi:  ");
 
-  scanf("%d%d       %d", &a, &b, &c);
+  scanf("%d%d%d", &a, &b, &c);
 
   printf("Hai inserito %d, %d e %d\n", a, b, c);
 

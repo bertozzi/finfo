@@ -16,7 +16,7 @@ int main(int argc, char **argv){
   // dell'and sia falsa per far si' che tutta l'espressione sia falsa. Se d>0 e' falsxa diventa del tutto
   // inutile valutare anche l'altra sottoespressione
   
-  printf("Il risultato dell'espressione (%d > 0 && %d%%%d) e' %d\n", d, n, d, risultato);
+  printf("Il risultato dell'espressione (%d > 0 && %d%%%d == 0) e' %d\n", d, n, d, risultato);
        
 
 
