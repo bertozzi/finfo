@@ -16,7 +16,7 @@ int main(int argc, char **argv){
       printf("%d e' divisore esatto di %d\n", d, n);
   else
     printf("Hai inserito un numero non positivo!\n");
-  } // resta mal indentato ma ora si capisce...
+  } // resta mal indentato ma ora si capisce come viene di fatto eseguito 
 
 
 

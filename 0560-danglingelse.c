@@ -11,7 +11,7 @@ int main(int argc, char **argv){
   scanf("%d", &d);
 
   if (d > 0)
-    if(n%d)
+    if(n%d == 0)
       printf("%d e' divisore esatto di %d\n", d, n);
   else
     printf("Hai inserito un numero non positivo!\n");
