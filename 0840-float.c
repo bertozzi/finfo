@@ -10,7 +10,7 @@ int main(int argc, char **argv){
   for(int i = 0; i < 40; ++i)
   {
     a = a + 0.1;
-    printf("a = %f\n", a);
+    printf("%2d: a = %f\n", i+1, a);
   }
 
 

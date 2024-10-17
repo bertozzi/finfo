@@ -9,7 +9,7 @@ int main (int argv, char **argc) {
   scanf("%d", &n);
 
   int i;
-  for(i=n-1; i>1; --i)
+  for(i = n - 1; i > 1; --i) // why > and not >= ?
   {
     if(!(n%i))
       break;

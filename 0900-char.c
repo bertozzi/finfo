@@ -11,10 +11,11 @@ int main(int argc, char **argv){
   {
     for(int c = 0; c < 128; c = c + 16)
     {
-      if(isprint(r + c))
-	printf("%3d [%c]  ", r + c, r + c);
+      int ascii_code = r + c;
+      if(isprint(ascii_code))
+	printf("%3d [%c]  ", ascii_code, ascii_code);
       else
-	printf("%3d [-]  ", r + c);
+	printf("%3d [-]  ", ascii_code);
     }
     printf("\n");
   }
