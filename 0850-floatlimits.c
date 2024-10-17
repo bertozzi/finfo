@@ -35,3 +35,28 @@ int main(int argc, char** argv) {
 
     return 0;
 }
+/*
+Storage size for float : 4 
+FLT_MAX     :   3.40282e+38
+FLT_MIN     :   1.17549e-38
+Number of decimal digits that can be accurately represented: 6
+
+Storage size for double : 8 
+DBL_MAX     :   1.79769e+308
+DBL_MIN     :   2.22507e-308
+Number of decimal digits that can be accurately represented: 15
+
+Storage size for long double : 16 
+LDBL_MAX    :   1.18973e+4932
+LDBL_MIN    :   3.3621e-4932
+Number of decimal digits that can be accurately represented: 18
+
+Precision Examples:
+
+float       -> 1.100000023841857910156250000000 	 1.100000
+                 ******
+double      -> 1.100000000000000088817841970013 	 1.100000
+                 ***************
+long double -> 1.100000000000000000021684043450 	 1.100000
+                 ******************
+  */

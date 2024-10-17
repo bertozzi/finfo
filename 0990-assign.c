@@ -25,5 +25,7 @@ int main(int argc, char **argv){
  Quando converto -76543.992188 in short ottengo        -11007
  Quando converto -76543.992188 in unsigned int ottengo 4294890753
 
+ NOTA: il compilatore non da' warning neanche se gli dico di darmi tutti i warning possibili!
+
  */
 

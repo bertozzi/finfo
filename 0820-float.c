@@ -5,7 +5,6 @@
 int main(int argc, char **argv){
 
   printf("%f\n", 123.4567890123456); // stampa in formato decimale
-  printf("%F\n", 123.4567890123456); // stampa in formato decimale maiuscolo
   printf("%e\n", 123.4567890123456); // stampa in formato scientifico
   printf("%E\n", 123.4567890123456); // stampa in formato scientifico maiuscolo
   printf("%g\n", 123.4567890123456); // stampa in formato breve
