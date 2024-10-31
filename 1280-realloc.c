@@ -24,15 +24,18 @@ int main(int argc, char **argv){
     frase = realloc(frase, sizeof(char) * fraselen); // allargo (o nel caso della prima volta lo creo) il buffer che serve a contenere quanto letto
     // FIXME qui ci vorrebbe un controllo, omettiamo per semplicita'
 
-    frase[i]=c; // memorizzo in array il carattere letto
-    ++i;        // aggiorno indice 
+    frase[i] = c; // memorizzo in array il carattere letto
+    ++i;          // aggiorno indice 
 
+    // potevo evitare di usare la variabile i e usare fraselen (di fatto partono tutte
+    // e due da 0 e vengono incrementate ad ogni ciclo) facendo cosi':
+    // frase[fraselen - 1] = c;
 
   }while(c != '\n'); // esco quando incontro l'invio (che comunque ho memorizzato lo stesso)
 
 
   printf("I caratteri letti sono: ");
-  for(int i=0; i< fraselen; ++i)
+  for(i = 0; i < fraselen; ++i)
     printf("[%c]", frase[i]);
   printf("\n");
 
