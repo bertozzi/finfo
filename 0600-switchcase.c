@@ -1,4 +1,4 @@
-// valutazione condizioni: switch()-case con case multipli
+// valutazione condizioni: switch()-case
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -14,6 +14,8 @@ int main(int argc, char **argv){
       printf("Eccellente!\n");
       break; // serve per uscire dal blocco tra le { } 
     case 9:
+      printf("Veramente ottimo\n");
+      break;
     case 8:
       printf("Ottimo\n");
       break;
@@ -24,7 +26,6 @@ int main(int argc, char **argv){
       printf("Sufficiente\n");
       break;
     case 5:
-    case 4:
       printf("Insufficiente\n");
       break;
     default:

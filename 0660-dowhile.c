@@ -1,30 +1,42 @@
-// Iterazioni, ciclo do-while() cifre binarie, operatore sizeof()
+// Iterazioni, ciclo do-while() calcolo MCD
 #include<stdio.h>
 #include<stdlib.h>
 
 int main(int argc, char **argv){
 
-  int n, nbit;
+  int a, b, r;
+  printf("----- Massimo Comune Divisore -----\n");
+  printf("Introdurre due numeri interi positivi:\n");
 
-  printf("Inserisci un numero intero: ");
-  scanf("%d", &n);
+  printf("Primo numero: ");
+  scanf("%d", &a);
 
-  nbit = sizeof(n)*8; // sizeof(variabile) restituisce i byte utilizzati per quel tipo di dato (dipendono da compilatore e architettura)
+  printf("Secondo numero: ");
+  scanf("%d", &b);
 
-  printf("%+12d in binario si rappresenta come: ", n);
+  printf("Il Massimo Comun Divisore di %d e %d e': ", a, b);
 
-  // uso lo scorrimento bit a bit
-  do
+  // algoritmo di Euclide
+  do { 
+    r = a % b;
+    a = b;
+    b = r;
+  } while (r > 0);
+
+  printf("%d\n", a);
+
+  /* tecnicamente ottenibile anche con un while() ma occorre piu' codice:
+
+  r = a % b;
+  a = b;
+  while(r>0)
   {
-    nbit--;
-    printf("%d", (n >> nbit) & 1);
+    a = b;
+    b = r;
+    r = a % b;
+  }
+  */
 
-    if(!(nbit%8))
-      printf(" ");
-
-  }while(nbit);
-
-  printf("\n");
 
   return 0;
 }
