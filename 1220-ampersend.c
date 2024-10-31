@@ -12,7 +12,7 @@ int main(int argc, char **argv){
 
   printf("Gli indirizzi in memoria delle variabili sono:\n");
 
-  printf(" a si trova in %p (%ld byte)\n", &a, sizeof(a));  // l'operatore & restituisce l'indirizzo di una variabile, %p e' lo specificatore previsto per gli indirizzi
+  printf(" a    si trova in %p (%ld byte)\n", &a, sizeof(a));  // l'operatore & restituisce l'indirizzo di una variabile, %p e' lo specificatore previsto per gli indirizzi
   printf(" b    si trova in %p (%ld byte)\n", &b, sizeof(b));
   printf(" c    si trova in %p (%ld byte)\n", &c, sizeof(c));
   printf(" d    si trova in %p (%ld byte)\n", &d, sizeof(d));
@@ -26,7 +26,7 @@ int main(int argc, char **argv){
 
 /* ESEMPIO ESECUZIONE
 
- a si trova in 0x55cfcfe69014 (4 byte)
+ a    si trova in 0x55cfcfe69014 (4 byte)
  b    si trova in 0x7ffe63b22ee8 (4 byte)
  c    si trova in 0x7ffe63b22ee7 (1 byte)
  d    si trova in 0x7ffe63b22eec (4 byte)

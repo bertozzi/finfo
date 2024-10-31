@@ -6,10 +6,10 @@
 int *genera_array_lanci(int n)
 {
 
-  int *v=malloc(n * sizeof(int));   // era int v[n];
+  int *v = malloc(n * sizeof(int));   // era int v[n];
 
   for(int i=0; i<n; ++i)
-    v[i]=rand()%6+1;
+    v[i] = rand()%6 + 1;
 
   return v;
 } // anche quando la funzione termina l'area allocata con malloc() rimane e non viene distrutta come nel caso dei VLA
@@ -18,16 +18,16 @@ int main(int argc, char **argv){
 
   int n;
 
-  printf("Quanti lanci di dado vuoi simulare? "); // era "Quanti numeri vuoi sommare (max 100)? "
+  printf("Quanti lanci di dado vuoi simulare? "); 
   scanf("%d", &n);
 
-  int *lanci=genera_array_lanci(n);
+  int *lanci = genera_array_lanci(n);
 
   printf("Hai ottenuto i seguenti valori: ");
   for(int i=0; i<n; ++i)
     printf(" %d", lanci[i]);
 
-  free(lanci);
+  free(lanci); // nei VLA non usabile...
 
   printf("\n");
 
