@@ -8,7 +8,7 @@
 char *readline(void)
 {
   char c, tmp[1000]; // sto largo...
-  int i=0;
+  int i = 0;
   do
   {
     scanf("%c", &c); // leggo carattere per carattere
@@ -24,7 +24,7 @@ char *readline(void)
 int main(int argc, char **argv){
 
   printf("Inserisci una frase: ");
-  char *frase=readline();
+  char *frase = readline();
   int i = 0;
   printf("Hai inserito: ");
   do

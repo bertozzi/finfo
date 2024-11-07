@@ -18,9 +18,10 @@ int main(int argc, char **argv){
 
   // ciclo di scorrimento in cui uso il puntatore stesso per scorrere array
 
-  for(p=a;                          // inizialmente p punta a inizio a[]
-      p < a+sizeof(a)/sizeof(a[0]); // sizeof(a)/sizeof(a[0]) e' il numero di elementi dell'array (117). Se lo sommo all'indirizzo di a, ottengo esattamente l'indirizzo di memoria appena oltre l'ultimo
-				    // elemento
+  for(p = a;                        // inizialmente p punta a inizio a[]
+      p < a+sizeof(a)/sizeof(a[0]); // sizeof(a)/sizeof(a[0]) e' il numero di elementi dell'array (117). 
+				    // Se lo sommo all'indirizzo di a, ottengo esattamente l'indirizzo 
+				    // di memoria appena oltre l'ultimo elemento
       ++p)                          // ogni volta mi "sposto" su elemento successivo
   {
     printf("All'indirizzo %p e' presente il numero %f\n", p, *p);
