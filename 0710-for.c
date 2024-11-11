@@ -1,20 +1,16 @@
-// for(;;) omissione espressioni
+// ciclo for(;;) uso dell'operatore ","
 #include<stdio.h>
 #include<stdlib.h>
 
 int main(int argc, char **argv){
 
-  int i, sum=0;
+  int m, n;
 
-  printf("Inserisci un numero intero positivo: ");
-  scanf("%d", &i);
-
-  printf("La somma dei numeri da 1 a %d vale ", i);
-
-  for(; i>0; --i) // inutile inizializzare i, contiene gia' il valore necessario
-    sum +=i;
-
-  printf("%d\n", sum);
+  /* l'operatore "," permette di concatenare espressioni
+     a volte usato per le inizializzazioni dei for(;;) 
+   */
+  for (m = 1, n = 8; m < n; m=m+1, n=n-1)
+    printf("m = %d n = %d\n", m, n);
 
   return 0;
 }

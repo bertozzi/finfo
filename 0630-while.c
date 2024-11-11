@@ -1,23 +1,23 @@
-// Iterazioni, il ciclo while() pericolo ciclo infinito
+// Iterazioni, il ciclo while()
 #include<stdio.h>
 #include<stdlib.h>
-#include<unistd.h>
 
 int main(int argc, char **argv){
 
-  int x;
+  int x, sum=0;
   
-  printf("Inserisci il valore per il countdown: ");
+  printf("Inserisci un numero intero positivo: ");
   scanf("%d", &x);
 
-  while(x!=0) //XXX raggiungeremo sempre il valore 0?
+  printf("La somma dei numeri da 1 a %d vale: ", x);
+
+  while(x>0)
   {
-    printf("%3d...\n", x);
-    --x;       
-    sleep(1);
+    sum += x;  // ad ogni volta sommo x a sum
+    --x;       // decremento x (fondamentale!)
   }
 
-  printf("START!\n");
+  printf("%d\n", sum);
 
 
   return 0;

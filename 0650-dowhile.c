@@ -1,28 +1,20 @@
-// Iterazioni, ciclo do-while() cifre binarie
+// do-while, controllo input utente
 #include<stdio.h>
 #include<stdlib.h>
 
 int main(int argc, char **argv){
 
-  int n, i, r;
+  int n;
 
-  printf("Inserisci un numero intero positivo: ");
-  scanf("%d", &n);
-
-  i=0;
-
-  // ogni volta divido per 2, il resto che ottengo e' il relativo bit (a partire dal meno significativo)
   do
   {
-    r = n%2; // resto divisione per 2 puo' essere solo 1 o 0
-    n = n/2; 
+    printf("Inserisci un numero tra 0 e 15: ");
+    scanf("%d", &n);
+  }
+  while(n < 0 || n > 15); // ripeto fino a quando il numero inserito NON e' nell'intervallo richiesto
 
-    printf("BIT %d:\t%d\n", i++, r);
 
-  }while(n);
 
   return 0;
 }
-
-
 
