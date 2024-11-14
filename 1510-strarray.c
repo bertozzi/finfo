@@ -34,12 +34,17 @@ che nel pensier rinova la paura!";
     word = strtok(NULL, delimitatori);
   }
 
+  // alla fine di questo ciclo, i contiene il numero di stringhe memorizzato
+  printf("Ho memorizzato nell'array bidimensionale n. %d stringhe\n", i);
+
+  int mem_used = 0;
   for(int j=0; j<i; ++j)
   { 
     printf("#%d \t %s\n", j, str_array[j]);
+    mem += strlen(str_array[j] + 1);
   }
 
-  printf("Per memorizzare le stringhe ho usato %ld byte di memoria\n", sizeof(str_array));
+  printf("Per memorizzare le stringhe ho usato un array che occupa %ld byte di memoria. ma ne bastavano %d\n", sizeof(str_array), mem_used);
 
   return 0;
 }
