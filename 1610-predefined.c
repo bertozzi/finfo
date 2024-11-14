@@ -17,13 +17,20 @@ int main(int argc, char **argv){
 
     printf("] e' un carattere ");
 
-    if      (c>='0' && c<='9') printf("numerico\n");
-    else if (c>='a' && c<='z') printf("lettera minuscola\n");
-    else if (c>='A' && c<='Z') printf("lettera maiuscola\n");
-    else if (c==' ' || c=='\n' || c=='\t' || c=='\r' || c=='\v' || c=='\f') printf("di spaziatura\n");
-    else if ((c>='!' && c<='/') || (c>=':' && c<='@') || (c>='[' && c<='`') || (c>='{' && c<='~')) printf("d'interpunzione\n");
-    else if (c==127 || c<' ' ) printf("di controllo\n"); // ho semplificato notevolmente la condizione...
-    else                 printf("Errore\n");
+    if      (c>='0' && c<='9') 
+      printf("numerico\n");
+    else if (c>='a' && c<='z') 
+      printf("lettera minuscola\n");
+    else if (c>='A' && c<='Z')                                                                     
+      printf("lettera maiuscola\n");
+    else if (c==' ' || c=='\n' || c=='\t' || c=='\r' || c=='\v' || c=='\f')                        
+      printf("di spaziatura\n");
+    else if ((c>='!' && c<='/') || (c>=':' && c<='@') || (c>='[' && c<='`') || (c>='{' && c<='~')) 
+      printf("d'interpunzione\n");
+    else if (c==127 || c<' ' ) 
+      printf("di controllo\n"); // ho semplificato notevolmente la condizione...
+    else                 
+      printf("Errore\n");
   }
 
 
