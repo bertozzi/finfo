@@ -41,7 +41,7 @@ che nel pensier rinova la paura!";
   for(int j=0; j<i; ++j)
   { 
     printf("#%d \t %s\n", j, str_array[j]);
-    mem += strlen(str_array[j] + 1);
+    mem_used += strlen(str_array[j]) + 1;
   }
 
   printf("Per memorizzare le stringhe ho usato un array che occupa %ld byte di memoria. ma ne bastavano %d\n", sizeof(str_array), mem_used);

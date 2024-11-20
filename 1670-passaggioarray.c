@@ -36,6 +36,5 @@ void uppercase(char mystr[])
   printf("DEBUG: la frase passata alla funzione e' [%s] ed e' costituita da %ld caratteri. Il parametro della funzione ha dimensione %ld byte\n", mystr, strlen(mystr), sizeof(mystr));
 
   for(int i=0; i<strlen(mystr); ++i)
-    if(islower(mystr[i]))
-      mystr[i] ^= 32; // le minuscole hanno tutte il sesto bit pari ad 1 a differenza delle corrispondenti maiuscole con uno XOR con 32 lo metto a 0
+    mystr[i] = toupper(mystr[i]);
 }
