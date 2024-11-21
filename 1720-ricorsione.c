@@ -3,9 +3,9 @@
 #include<stdlib.h>
 
 
-unsigned long long fact(unsigned int n){
+unsigned long long fact(unsigned long long n){
 
-  printf("DEBUG: sono stata invocata con n=%u\n", n);
+  printf("DEBUG: sono stata invocata con n=%llu\n", n);
 
   if(n==1 || n==0)
   {
