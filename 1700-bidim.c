@@ -39,16 +39,17 @@ void stampa_vla(int righe, int colonne, int scacchiera[righe][colonne]) // nell'
   }
 }
 
-// PUNTATORI A PUNTATORI
+// PUNTATORI 
 // in maniera piu' generale posso usare
-// array di array ovvero puntatori a puntatori
+// un puntatore
+// necessario convertire la struttura logica bidimensionale in monodimensionale
 void stampa_punct(int *scacchiera, int righe, int colonne) // ma comunque devo passare lo stesso le dimensioni in qualche modo...
 {
   for(int i = 0; i < colonne; ++i)
   {
     for(int j = 0; j < righe; ++j)
     {
-      printf("%d", scacchiera[j*colonne + i]);
+      printf("%d", scacchiera[j*colonne + i]); // la formula mi permette di convertire le due dimensioni riga/colonna nella posizione in memoria
     }
   printf("\n");
   }
@@ -79,7 +80,7 @@ int main(int argc, char **argv){
   stampa_vla(dim, dim, scacchiera);
 
   printf("\n");
-  stampa_punct((int *)scacchiera, dim, dim);
+  stampa_punct((int *)scacchiera, dim, dim); // necessaria conversione esplicita (un array multidimensionale non equivale ad un puntatore)
   
   
 

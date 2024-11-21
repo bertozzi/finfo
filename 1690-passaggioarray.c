@@ -30,9 +30,9 @@ void stampa_vla(int dim, int a[dim]) // nell'elenco dei parametri l'array DEVE e
   printf("\n");
 }
 
-// PUNTATORI A PUNTATORI
+// PUNTATORI
 // in maniera piu' generale posso usare
-// array di array ovvero puntatori a puntatori
+// i puntatori
 void stampa_punct(int *a, int dim) // ma comunque devo passare lo stesso le dimensioni in qualche modo...
 {
   for(int i = 0; i < dim; ++i)
