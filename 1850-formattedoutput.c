@@ -4,7 +4,7 @@
 
 int main(int argc, char **argv){
 
-  char str[][100] = { "pippo", "paperino", "pluto", "gastone" };
+  char str[][100] = { "pippo", "paperino", "pluto", "gastone", "topolino" };
 
   int i;
 
@@ -17,7 +17,7 @@ int main(int argc, char **argv){
     exit(1);
   }
 
-  for(i=0; i < 4; ++i)
+  for(i=0; i < 5; ++i)
   {
     fprintf(fp, "#%d: %s\n", i, str[i]);
   }
