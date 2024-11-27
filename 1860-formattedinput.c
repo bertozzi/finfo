@@ -1,4 +1,4 @@
-// formatted input
+// uso fscanf() per leggere parola per parola e valore di ritorno per determinare se sono a fine file
 #include<stdio.h>
 #include<stdlib.h>
 
