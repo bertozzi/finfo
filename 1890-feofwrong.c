@@ -1,4 +1,4 @@
-// uso sbagliato di feof()
+// uso sbagliato di feof() in lettura file parola a parola
 #include<stdio.h>
 #include<stdlib.h>
 
