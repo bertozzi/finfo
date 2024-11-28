@@ -1,4 +1,4 @@
-// lettura file binario
+// lettura di parte di un file binario in array
 #include<stdio.h>
 #include<stdlib.h>
 
