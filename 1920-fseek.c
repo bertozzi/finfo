@@ -19,6 +19,7 @@ int main(int argc, char **argv){
 
   // il formato GIF contiene nei primi 6 bytes i codici ASCII di "GIF89a", li devo saltare
 
+  // ricavo la posizione attuale (qui sono ad inizio file per cui e' ovvio che sia "0")
   long position = ftell(bf);
   printf("Nel file sono alla posizione %ld\n", position);
   fseek(bf, 6, SEEK_SET); // SEEK_SET indica che l'offset è relativo all'inizio del file, altri valori possono essere SEEK_END o SEEK_CUR
@@ -38,6 +39,11 @@ int main(int argc, char **argv){
   rewind(bf);
   position = ftell(bf);
   printf("Dopo la rewind() sono alla posizione %ld\n", position);
+
+  fseek(bf, 0, SEEK_END); // mi sposto esattamente alla fine del file
+  position = ftell(bf);
+  printf("Alla fine del file sono alla posizione %ld\n", position);
+
 
   fclose(bf);
 

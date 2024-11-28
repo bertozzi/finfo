@@ -12,6 +12,7 @@ struct phone_number
 
 int main(int argc, char **argv){
 
+  // definisco variabile n di tipo "struct phone_number"
   struct phone_number n;
 
   printf("inserisci prefisso internazionale: ");
