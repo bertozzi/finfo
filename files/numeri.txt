@@ -1,0 +1,7 @@
+In questo file ci sono 3 numeri interi
+voglio un programma che me li estragga tutti sia
+un numero come 567 che un altro come 1345
+Mi spiego, il programma deve leggere questo file, la parte
+di testo (ovvero caratteri ecc.) la deve ignorare mentre
+i numeri invece deve leggere come tali. Quindi se incontra 
+"pippo" lo ignora, se incontra "1027846" lo legge come numero.
