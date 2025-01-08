@@ -1,4 +1,4 @@
-// uso di fopen() per file in lettura e perror()
+// uso di fopen() in scrittura
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -6,7 +6,7 @@ int main(int argc, char **argv){
 
   FILE *fp;  // definisco il puntatore alla struct FILE
 
-  fp = fopen("ilmiofile.txt", "r");  // tento di aprire il file "ilmiofile.txt" in lettura ("r")
+  fp = fopen("ilmiofile.txt", "w");  // identico all'esercizio precedente ma uso "w" per aprire in scrittura
 
   // fopen() restituisce um indirizzo valido se l'operazione ha avuto successo oppure NULL se e' fallita
 
@@ -21,8 +21,7 @@ int main(int argc, char **argv){
   return 0;
 }
 
-// quando compilato ed eseguito fornisce il seguente messaggio:
-// "Errore in apertura del file ilmiofile.txt: No such file or directory"
-// in pratica fallisce in quanto non riesce ad aprire il file perche' non esiste
-// ma l'apertura di un file puo' fallire per altri motivi (permessi, percorso sbagliato ecc.)
-// per questo e' importante l'uso di perror()
+// se compilate ed eseguite questo esercizio non avete messaggi di errore
+// il file "ilmiofile.txt" viene creato e di dimensioni pari a 0 byte (l'abbiamo solo aperto, 
+// non vi viene scritto dentro niente).
+// cosa succede se provate ad aprire un file gia' esistente? Cambiate il nome del file nella fopen() e provate

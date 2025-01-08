@@ -1,4 +1,4 @@
-// uso fscanf() per interpretare conenuto riga
+// uso fscanf() per leggere parola per parola e valore di ritorno per determinare se sono a fine file
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -11,18 +11,31 @@ int main(int argc, char **argv){
     exit(1);
   }
 
-  int indice;
   char parola[1000]; // array sufficientemente "largo", ricordatevi che i byte non li pagate (per ora)
 
-  // devo usare stringa di formato che mi permette di estrarre cio' che voglio dal file 
-  // tralasciando tutto il resto
-  while(fscanf(fp, "#%d: %s\n", &indice, parola) == 2) // leggo sia indice della riga che stringa
+  while(fscanf(fp, " %s", parola) == 1) // leggo stringa fino a prima spaziatura, controllo che lettura sia andata a buon fine
+    // fscanf() restituisce il numero di specificatori di formato che e' riuscita a leggere 
+    // quindi, in questo caso dove la stringa di formato ne contiene uno solo, se la lettura va a buon fine restituisce 1 
   {
-    printf("Ho letto %d e [%s]\n", indice, parola);
+    printf("Ho letto [%s]\n", parola);
   }
 
   fclose(fp);
 
   return 0;
 }
+
+/* OUTPUT
+Ho letto [#0:]
+Ho letto [pippo]
+Ho letto [#1:]
+Ho letto [paperino]
+Ho letto [#2:]
+Ho letto [pluto]
+Ho letto [#3:]
+Ho letto [gastone]
+Ho letto [#4:]
+Ho letto [topolino]
+*/
+
 

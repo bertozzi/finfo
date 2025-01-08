@@ -1,10 +1,13 @@
-// fgets() e fputs()
+// fgetc() e fputc()
+// in questo esempio si sfruttano le operazioni di lettura/scrittura di un singolo byte per
+// ricopiare il contenuto di un file in un secondo file (byte a byte)
+// conto anche le operazioni di lettura/scrittura fatte
 #include<stdio.h>
 #include<stdlib.h>
 
 int main(int argc, char **argv){
 
-  FILE *fileinput, *fileoutput;  // definisco il puntatore alla struct FILE
+  FILE *fileinput, *fileoutput;  // definisco i puntatori alla struct FILE. Ne servono due: uno per il sorgente, l'altro per la destinazione
   char nomefile[1000];
 
   printf("Inserisci il nome del file da ricopiare: ");
@@ -27,16 +30,16 @@ int main(int argc, char **argv){
     exit(EXIT_FAILURE);
   }
 
-  
-  char buffer[100]; // leggo fino a 100 caratteri alla volta
+  // leggo carattere per carattere il primo file e man mano che leggo scrivo nel secondo file
+  int c; // devo usare int per EOF
   int i = 0; // lo uso per contare il numero di operazioni
 
-  // char *fgets(char *s, int size, FILE *stream);
-  while( fgets(buffer, 100, fileinput) != NULL) // fgets() restituisce NULL se non riesce a leggere nulla
+  //   int fgetc(FILE *stream);
+  while( (c = fgetc(fileinput)) != EOF) // fgetc() restituisce EOF se arriviamo alla fine del file oppure il codice ASCII del carattere letto
   {
-    printf("Ho letto [%s]\n", buffer);
-    //  int fputs(const char *s, FILE *stream);
-    fputs(buffer, fileoutput); // scrivo quanto letto nel secondo file
+    printf("Ho letto [%c]\n", c);
+    //     int fputc(int c, FILE *stream);
+    fputc(c, fileoutput); // scrivo quanto letto nel secondo file
     ++i;
   }
 
