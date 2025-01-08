@@ -1,4 +1,4 @@
-// uso di fopen() e perror()
+// uso di fopen() per file in lettura e perror()
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -21,3 +21,8 @@ int main(int argc, char **argv){
   return 0;
 }
 
+// quando compilato ed eseguito fornisce il seguente messaggio:
+// "Errore in apertura del file ilmiofile.txt: No such file or directory"
+// in pratica fallisce in quanto non riesce ad aprire il file perche' non esiste
+// ma l'apertura di un file puo' fallire per altri motivi (permessi, percorso sbagliato ecc.)
+// per questo e' importante l'uso di perror()

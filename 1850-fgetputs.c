@@ -1,4 +1,6 @@
-// fgetc() e fputc()
+// fgets() e fputs()
+// come nell'esercizio precedente, ricopio il contenuto di un file in un secondo file
+// ma stavolta uso operazioni di lettura/scrittura multibyte
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -27,16 +29,16 @@ int main(int argc, char **argv){
     exit(EXIT_FAILURE);
   }
 
-  // leggo carattere per carattere il primo file e man mano che leggo scrivo nel secondo file
-  int c; // devo usare int per EOF
+  
+  char buffer[100]; // leggo fino a 100 caratteri alla volta
   int i = 0; // lo uso per contare il numero di operazioni
 
-  //   int fgetc(FILE *stream);
-  while( (c = fgetc(fileinput)) != EOF) // fgetc() restituisce EOF se arriviamo alla fine del file oppure il codice ASCII del carattere letto
+  // char *fgets(char *s, int size, FILE *stream);
+  while( fgets(buffer, 100, fileinput) != NULL) // fgets() restituisce NULL se non riesce a leggere nulla
   {
-    printf("Ho letto [%c]\n", c);
-    //     int fputc(int c, FILE *stream);
-    fputc(c, fileoutput); // scrivo quanto letto nel secondo file
+    printf("Ho letto [%s]\n", buffer);
+    //  int fputs(const char *s, FILE *stream);
+    fputs(buffer, fileoutput); // scrivo quanto letto nel secondo file
     ++i;
   }
 
