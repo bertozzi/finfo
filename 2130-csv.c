@@ -34,7 +34,7 @@ int main(int argc, char **argv){
 
   // passo 3: leggo e memorizzo i dati
   for(int i=0; i<nrighe; ++i)
-    fscanf(fp, "%d,%f,%f,%f ", &ad[i].indice, &ad[i].diametro, &ad[i].altezza, &ad[i].volume);
+    fscanf(fp, "%d,%f,%f,%f ", &ad[i].indice, &ad[i].diametro, &ad[i].altezza, &ad[i].volume); // notare la sintassi per l'accesso ai singoli elementi dell'array e ai membri della struct
   fclose(fp);
 
 
