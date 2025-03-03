@@ -1,4 +1,4 @@
-// allocazione dinamica array bidimensionali
+// allocazione dinamica array bidimensionali usando puntatori a puntatori
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -16,10 +16,10 @@ int main(int argc, char **argv){
 
   int **matrix;  // un puntatore di puntatori permette di gestire un array di array
 
-  // alloco matrix, in pratica un singolo array di puntatori a int
+  // Passo 1: alloco matrix, in pratica un singolo array di puntatori a int
   matrix = malloc(nrows*sizeof(int *)); 
-  // dopo questa riga, ammesso che la malloc() abbia fatto il suo dovere, l'elemento i-esimo matrix[i] è un puntatore ad int
-  // li devo inizializzare tutti
+  // Passo 2: dopo questa riga, ammesso che la malloc() abbia fatto il suo dovere, l'elemento i-esimo matrix[i] è un puntatore ad int
+  //          li devo inizializzare tutti facendoli puntare a opportuna riga
   for(int i = 0; i < nrows; ++i)
     matrix[i] = malloc(ncols*sizeof(int));
 
