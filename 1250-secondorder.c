@@ -1,4 +1,4 @@
-// risoluzione equazioni secondo ordine
+// 2nd order polynomial equation, math predefined functions
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>   // we need this for math functions!
