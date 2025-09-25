@@ -1,4 +1,4 @@
-// numeri casuali, intervallo valori
+// numeri casuali, intervallo valori, operatore %
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>

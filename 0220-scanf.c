@@ -4,13 +4,13 @@
 
 int main(int argc, char **argv){
 
-  int a,b,c;
+  int a,b,c,v;
 
   printf("Inserisci tre numeri interi:  ");
 
-  scanf("%d%d%d", &a, &b, &c);
+  v = scanf("%d%d%d", &a, &b, &c);
 
-  printf("Hai inserito %d, %d e %d\n", a, b, c);
+  printf("Hai inserito %d, %d e %d (v = %d)\n", a, b, c, v);
 
 
 
