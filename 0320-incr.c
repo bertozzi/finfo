@@ -23,6 +23,8 @@ int main(int argc, char **argv){
   n = m++ + m++; // FIXME come sopra!
   printf("n   = %d\n", n);
 
+  // n = ++m++;  FIXME non compila, perche'? Ma perche' solo un lvalue puo' essere incrementato...
+  // printf("n   = %d\n", n);
 
   return 0;
 }
