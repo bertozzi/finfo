@@ -4,7 +4,8 @@
 
 int main(int argc, char **argv){
 
- int m = 66, n;
+  int m = 66, n;
+
   n = ++m; // l'operatore e' prefisso: prima eseguo incremento, poi rendo disponibile valore per il resto delle operazioni (in questo caso l'assegnamento a n)
   printf("m = %d, n= %d\n", m, n);
 
@@ -17,7 +18,7 @@ int main(int argc, char **argv){
   printf("m   = %d\n", m);
   printf("++m = %d\n", ++m);
 
-  m=m++; // FIXME risultato potenzialmente non definito!
+  m = m++; // FIXME risultato potenzialmente non definito!
   printf("m   = %d\n", m);
 
   n = m++ + m++; // FIXME come sopra!
@@ -29,3 +30,12 @@ int main(int argc, char **argv){
   return 0;
 }
 
+/*
+m = 67, n= 67
+m = 68, n= 67
+m++ = 68
+m   = 69
+++m = 70
+m   = 70
+n   = 141
+*/

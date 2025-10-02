@@ -16,7 +16,7 @@ int main(int argc, char **argv){
   // lets try the same expression simply inverting the operands
   // formally this should be the same as previous one 
   risultato = (n%d == 0 && d != 0);
-  printf("Il risultato dell'espressione ( %d%%%d == 0 && %d != 0) e' %d\n", d, n, d, risultato);
+  printf("Il risultato dell'espressione ( %d%%%d == 0 && %d != 0) e' %d\n", n, d, d, risultato);
 
   /* FIXME
      when we input 0 for d the program fails during execution. Why?
