@@ -27,3 +27,16 @@ int main(int argc, char **argv){
   return 0;
 }
 
+/*
+Il raggio vale:             57 m
+La circonferenza vale       358.141571 m
+L'area del cerchio vale     10207.035156 m^2
+ma la posso scrivere anche  1.020704E+04 m^2
+        57 m
+    358.14 m
+  10207.04 m^2
+  1.02E+04 m^2
+0000000057 m
+       +57 m
+Per stampare solo la parte intera 3
+*/
