@@ -22,3 +22,24 @@ int main(int argc, char **argv){
   return 0;
 }
 
+/*
+
+Come usare il costrutto if:
+
+if(espressione)
+     istruzione|blocco di istruzioni
+else
+     istruzione|blocco di istruzioni
+
+Esempio
+
+if(a > 10 || b == c)
+{
+ printf("Condizione vera");
+}
+else
+{
+ printf("Condizione falsa");
+}
+
+*/

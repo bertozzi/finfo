@@ -13,6 +13,8 @@ int main()
     else
         printf("Eppure secondo l'operatore == x risulta diverso da 0.1\n"); 
 
+    printf("Stampiamo il valore di x: %.10f\n", x);
+
   return 0;
 }
 
