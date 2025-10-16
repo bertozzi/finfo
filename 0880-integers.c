@@ -16,7 +16,6 @@ int main(int argc, char **argv){
   printf("Hai inserito %d %d %d %ld %lld\n", a, b, c, d, e); // a rigore non necessario prefisso char e short se decimale
 
   printf("In formato esadecimale sono: %hhx %hx %x %lx %llx\n", a, b, c, d, e); // qui viceversa cambia se voglio considerare l'esatto numero di byte 
-  printf("In formato esadecimale sono: %hhu %hu %u %lu %llu\n", a, b, c, d, e); // qui viceversa cambia se voglio considerare l'esatto numero di byte 
 
   return 0;
 }

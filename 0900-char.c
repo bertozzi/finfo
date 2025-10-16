@@ -1,4 +1,4 @@
-// il tipo char, tabella ASCII
+// il tipo char, tabella ASCII, introduzione a ctype.h
 #include<stdio.h>
 #include<stdlib.h>
 
