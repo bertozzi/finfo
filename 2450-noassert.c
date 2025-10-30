@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 // adding a "#define NDEBUG" BEFORE the #include<assert.h> disable all assert() 
-#define NDEBUG 
+//#define NDEBUG 
 #include <assert.h>
 
 int main(int argc, char **argv) {
