@@ -10,7 +10,7 @@ int main(int argc, char **argv){
   printf("Quanti interi vuoi sommare? ");
   scanf("%lu", &n);
 
-  int *a=malloc(sizeof(int)*n); // con VLA potevo usare int a[n]; 
+  int *a = malloc(sizeof(int)*n); // con VLA potevo usare int a[n]; 
   if(!a) // equivalente a a==NULL
   {
     printf("ERRORE: non e' stato possibile allocare la memoria richiesta per %lu interi (%lu byte)\n", n, n*sizeof(int));
