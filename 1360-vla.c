@@ -11,6 +11,7 @@ int *genera_array_lanci(int n)
   for(int i=0; i<n; ++i)
     v[i] = rand()%6 + 1;
 
+  printf("DEBUG: restituisco indirizzo %p\n", v);
   return v;
 } // l'array v[] e' locale alla funzione. Viene quindi distrutto quando la funzione termina. Quindi l'indirizzo di memoria restituito non e' piu' utilizzabile
 
@@ -23,6 +24,7 @@ int main(int argc, char **argv){
 
   int *lanci = genera_array_lanci(n);
 
+  printf("DEBUG: la funzione ha restituito l'indirizzo %p\n", lanci);
   printf("Hai ottenuto i seguenti valori: ");
   for(int i=0; i<n; ++i)
     printf(" %d", lanci[i]);
