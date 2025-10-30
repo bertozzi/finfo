@@ -22,7 +22,7 @@ int main(int argc, char **argv){
   printf("Inserisci un secondo simbolo da tastiera: ");
   scanf("%c", &d);
 
-  printf("I simboli inseriti sono %c & %c\n", c, d);
+  printf("I simboli inseriti sono [%c] & [%c]\n", c, d);
 
   return 0;
 }
