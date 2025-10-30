@@ -15,3 +15,11 @@ int main(int argc, char **argv){
   return 0;
 }
 
+/* OUTPUT
+
+m = 1 n = 8
+m = 2 n = 7
+m = 3 n = 6
+m = 4 n = 5
+
+*/

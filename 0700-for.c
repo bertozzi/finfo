@@ -12,7 +12,7 @@ Condizione:       n <= ... -> eseguita ("valutata") prima di decidere se eseguir
 Aggiornmamento:   n = n +1 -> eseguito solo dopo il corpo del ciclo
 */
 
-  for (n = 1; n <= 1267; n=n+1)
+  for (n = 1; n <= 1267; n = n + 1)
     printf("%d ", n);
   
   /* equivalente con while()

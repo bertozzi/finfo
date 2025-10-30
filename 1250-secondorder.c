@@ -1,4 +1,4 @@
-// 2nd order polynomial equation, math predefined functions
+// 2nd order polynomial equation, math predefined functions   pow(), sqrt()
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>   // we need this for math functions!

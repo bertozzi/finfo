@@ -18,6 +18,7 @@ int main(int argc, char **argv){
   }
 
   // printf("Ora x vale %d\n", x); // se scommento, errore di compilazione? Perché?
+   				   // error: ‘x’ undeclared (first use in this function)
 
   return 0;
 }
