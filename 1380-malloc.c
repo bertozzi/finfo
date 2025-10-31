@@ -1,4 +1,4 @@
-// introduzione a malloc() e free(): rivisitazione problema durata automatica VLA
+// rivisitazione problema durata automatica VLA con malloc()
 #include<stdio.h>
 #include<stdlib.h>
 
