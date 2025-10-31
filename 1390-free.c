@@ -1,4 +1,4 @@
-// uso reale di free(), simulazione del lancio di dadi, esempio complesso
+// uso reale di free() per evitare memory leak, simulazione del lancio di dadi, esempio complesso
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
@@ -63,8 +63,7 @@ int main(int argc, char **argv){
       printf("\n");
     }
 
-    free(results);
-
+    free(results); // fondamentale! se non lo uso ad ogni ciclo "perdo" un'area di memoria
   }
 
   return 0;
