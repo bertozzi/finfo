@@ -31,7 +31,8 @@ int main(int argc, char **argv){
     // e due da 0 e vengono incrementate ad ogni ciclo) facendo cosi':
     // frase[fraselen - 1] = c;
 
-  }while(c != '\n'); // esco quando incontro l'invio (che comunque ho memorizzato lo stesso)
+  }
+  while(c != '\n'); // esco quando incontro l'invio (che comunque ho memorizzato lo stesso)
 
 
   printf("I caratteri letti sono: ");
