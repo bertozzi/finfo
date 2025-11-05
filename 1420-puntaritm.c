@@ -9,8 +9,6 @@ int main(int argc, char **argv){
 
   fp=a;
 
-  printf("Ora fp vale %p, e ha dimensione %ld mentre a[] ha dimensione %ld\n", fp, sizeof(fp), sizeof(a));
-
   for(int i=0; i<8; ++i)
   {
     printf("All'indirizzo %p trovo %d\n", fp, *fp);
@@ -22,7 +20,6 @@ int main(int argc, char **argv){
 
 /* esempio esecuzione
 
-Ora fp vale 0x7fff7dde7200, e ha dimensione 8 mentre a[] ha dimensione 32
 All'indirizzo 0x7fff7dde7200 trovo 3
 All'indirizzo 0x7fff7dde7204 trovo 4
 All'indirizzo 0x7fff7dde7208 trovo 5
