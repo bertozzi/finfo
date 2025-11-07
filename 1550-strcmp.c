@@ -15,7 +15,7 @@ int main(int argc, char **argv){
   printf("c=[%s]\n", c);
 
 
-  if(a==b) // con gli array NON funziona, sto confrontando i loro indirizzi in memoria
+  if(a == b) // con gli array NON funziona, sto confrontando i loro indirizzi in memoria
     printf("I valori di a e b sono uguali\n");
   else
     printf("I valori di a e b sono differenti\n");
