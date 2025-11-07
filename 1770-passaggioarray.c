@@ -4,15 +4,17 @@
 #include<time.h>
 
 // 3 possibilita'
-// 1: dimensioni note a priori
-// 2: VLA
-// 3: come puntatori a puntatori
+//  1: dimensioni note a priori (array statico)
+//  2: VLA
+//  3: come puntatori a puntatori
 
-#define SIZE 8
 
 // DIMENSIONI NOITE A PRIORI
 // questa funzione stampa solamente il contenuto di un array di dimensioni ben definite
 // al momento della compilazione
+
+#define SIZE 8
+
 void stampa(int a[SIZE])
 {
   for(int i = 0; i < SIZE; ++i)
@@ -23,6 +25,7 @@ void stampa(int a[SIZE])
 // USO VLA
 // se non conosco le dimensioni a priori allora posso sfruttare
 // i VLA se il mio compilatore li ammette
+
 void stampa_vla(int dim, int a[dim]) // nell'elenco dei parametri l'array DEVE essere DOPO le dimensioni
 {
   for(int i = 0; i < dim; ++i)
@@ -33,6 +36,7 @@ void stampa_vla(int dim, int a[dim]) // nell'elenco dei parametri l'array DEVE e
 // PUNTATORI
 // in maniera piu' generale posso usare
 // i puntatori
+
 void stampa_punct(int *a, int dim) // ma comunque devo passare lo stesso le dimensioni in qualche modo...
 {
   for(int i = 0; i < dim; ++i)
@@ -51,22 +55,32 @@ int main(int argc, char **argv){
   scanf("%d", &n);
   
 
-  // alloco con VLA (per semplicita')
-  int numbers[n];
+  int numbers_vla[n];
+  int numbers_sta[SIZE];
+  int *numbers_dyn = malloc(n * sizeof(int));
 
   // riempo di valori casuali
   for(int i = 0; i < n; ++i)
-      numbers[i] = rand()%1000;
+  {
+    int nc = rand()%1000;
+    numbers_vla[i] = nc;
+    numbers_dyn[i] = nc;
+    if(i < 8 )
+      numbers_sta[i] = nc;
+  }
 
   
   printf("\n");
-  stampa(numbers);
+  stampa(numbers_sta); 
   
   printf("\n");
-  stampa_vla(n, numbers);
+  stampa_vla(n, numbers_vla);
 
   printf("\n");
-  stampa_punct(numbers, n);
+  stampa_punct(numbers_dyn, n);
+
+  // Quindi a seconda del tipo di array devo scegliere come passare i dati?
+  // In realta' assolutamente no come si puo' vedere nell'esercizio seguente
 
 
   return 0;
