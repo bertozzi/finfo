@@ -6,14 +6,14 @@
 // 3 possibilita'
 // 1: dimensioni note a priori
 // 2: VLA
-// 3: come puntatori a puntatori
+// 3: come puntatori ad area allocata dinamicamente
 
-#define SIZE 8
+#define SIZE 8000
 
 // DIMENSIONI NOITE A PRIORI
 // questa funzione stampa solamente il contenuto di un array di dimensioni ben definite
 // al momento della compilazione
-void stampa(int a[SIZE])
+void stampa_stat(int a[SIZE])
 {
   for(int i = 0; i < SIZE; ++i)
     printf("%d ", a[i]);
@@ -51,21 +51,37 @@ int main(int argc, char **argv){
   scanf("%d", &n);
   
 
-  // alloco con VLA (per semplicita')
-  int numbers[n];
+  // definisco un VLA 
+  int numbers_vla[n];
 
-  // riempo di valori casuali
+  // dcefinisco array allocato dinamicamente
+  int *numbers_dyn = malloc(sizeof(int) * n);
+
+  // definisco array statico (ho esagerato con SIZE di modo che funzioni)
+  int numbers_stat[SIZE];
+
+
+  // riempiamoli di valori random
   for(int i = 0; i < n; ++i)
-      numbers[i] = rand()%1000;
+  {
+    int caso = rand()%1000;
+
+    numbers_vla[i]  = caso;
+    numbers_dyn[i]  = caso;
+    numbers_stat[i] = caso;
+  }
 
   
   printf("\n");
-  stampa(numbers);
+  // stampa array statico, non passo la dimensione in quanto gia' definito nella funzione
+  stampa_stat(numbers);
   
   printf("\n");
+  // stampa VLA, obbligatorio passare   anche numero elementi
   stampa_vla(n, numbers);
 
   printf("\n");
+  // stampa array allocato dinamicamente, obbligatorio passare   anche numero elementi ma non necessariamente prima dell'array
   stampa_punct(numbers, n);
 
 

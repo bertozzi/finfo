@@ -12,9 +12,9 @@ void incrementadidue(int a)
 
 int main(int argc, char **argv){
 
-  int i, x=1;
+  int i, x = 1;
 
-  for(i=1; i<10; i++)
+  for(i = 1; i < 10; i++)
   {
     incrementadidue(x);
 
