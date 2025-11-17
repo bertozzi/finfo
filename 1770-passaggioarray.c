@@ -9,7 +9,6 @@
 // 3: come puntatori ad area allocata dinamicamente
 
 #define SIZE 8000
-
 // DIMENSIONI NOITE A PRIORI
 // questa funzione stampa solamente il contenuto di un array di dimensioni ben definite
 // al momento della compilazione
@@ -23,6 +22,7 @@ void stampa_stat(int a[SIZE])
 // USO VLA
 // se non conosco le dimensioni a priori allora posso sfruttare
 // i VLA se il mio compilatore li ammette
+
 void stampa_vla(int dim, int a[dim]) // nell'elenco dei parametri l'array DEVE essere DOPO le dimensioni
 {
   for(int i = 0; i < dim; ++i)
@@ -33,6 +33,7 @@ void stampa_vla(int dim, int a[dim]) // nell'elenco dei parametri l'array DEVE e
 // PUNTATORI
 // in maniera piu' generale posso usare
 // i puntatori
+
 void stampa_punct(int *a, int dim) // ma comunque devo passare lo stesso le dimensioni in qualche modo...
 {
   for(int i = 0; i < dim; ++i)
@@ -51,10 +52,10 @@ int main(int argc, char **argv){
   scanf("%d", &n);
   
 
-  // definisco un VLA 
+  // definisco array allocato con VLA
   int numbers_vla[n];
 
-  // dcefinisco array allocato dinamicamente
+  // definisco array allocato dinamicamente
   int *numbers_dyn = malloc(sizeof(int) * n);
 
   // definisco array statico (ho esagerato con SIZE di modo che funzioni)
@@ -74,15 +75,18 @@ int main(int argc, char **argv){
   
   printf("\n");
   // stampa array statico, non passo la dimensione in quanto gia' definito nella funzione
-  stampa_stat(numbers);
+  stampa_stat(numbers_stat);
   
   printf("\n");
   // stampa VLA, obbligatorio passare   anche numero elementi
-  stampa_vla(n, numbers);
+  stampa_vla(n, numbers_vla);
 
   printf("\n");
   // stampa array allocato dinamicamente, obbligatorio passare   anche numero elementi ma non necessariamente prima dell'array
-  stampa_punct(numbers, n);
+  stampa_punct(numbers_dyn, n);
+
+  // Quindi a seconda del tipo di array devo scegliere come passare i dati?
+  // In realta' assolutamente no come si puo' vedere nell'esercizio seguente
 
 
   return 0;
