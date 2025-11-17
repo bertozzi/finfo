@@ -1,6 +1,7 @@
 // nuovi concetti: definizione di funzione
 #include<stdio.h>
 #include<stdlib.h>
+#include<time.h>
 
 
 // funzione che non prende in ingresso dati e non restituisce niente
@@ -45,6 +46,8 @@ int chiedi_numero_dadi(void)
 
 
 int main(int argc, char **argv){
+
+  srand(time(NULL));
 
   saluta(); // invocazione funzione che non prende in ingresso niente
 

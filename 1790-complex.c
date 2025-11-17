@@ -1,4 +1,4 @@
-// funzione che restituisce piu' di 1 singolo valore
+// funzione che restituisce piu' di 1 singolo valore sfruttando il passaggio argomenti per indirizzo
 #include<stdio.h>
 #include<stdlib.h>
 
