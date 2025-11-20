@@ -1,4 +1,4 @@
-// ricorsione + dynamic programming
+// ricorsione + dynamic programming, prefisso static
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -21,6 +21,8 @@ int main(int argc, char **argv){
 unsigned long fibonacci(unsigned long n)
 {
   static unsigned long Fibos[NGRANDE]={0,1}; // static rende questa variabile a durata fissa
+
+  printf("DEBUG: sono stata chiamata con n=%ld\n", n);
 
   if(!n) return 0;
   if(Fibos[n]) return Fibos[n]; // se l'ho gia' calcolato inutile ricalcolarlo!
