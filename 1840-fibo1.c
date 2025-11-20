@@ -19,6 +19,7 @@ int main(int argc, char **argv){
 
 unsigned long fibonacci(unsigned long n)
 {
+  printf("DEBUG: sono stata chiamata con n=%ld\n", n);
   if(n==0) return 0;
   if(n==1) return 1;
   return fibonacci(n-2)+fibonacci(n-1);
