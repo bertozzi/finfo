@@ -5,7 +5,7 @@
 int main(int argc, char **argv){
 
   //array of strings
-  char str[][100] = { "pippo", "paperino", "pluto", "gastone", "topolino" };
+  char *str[] = { "pippo", "paperino", "pluto", "gastone", "topolino" };
 
   int i;
 
