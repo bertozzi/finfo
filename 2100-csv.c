@@ -23,7 +23,7 @@ int main(int argc, char **argv){
   // leggo e stampo quanto letto riga per riga
   // per leggere, nella stringa di formato metto esattamente come e' fatto riga per riga il mio file
   // ovvero: un numero intero (che leggero'), una virgola (che ignorero'), un numero flot, una virgola ...
-  while(fscanf(fp, "%d,%f,%f,%f ", &indice, &diametro, &altezza, &volume) == 4) // se non ho letto 4 elementi o il file non e' fatto come me lo aspetto o sono arrivato in fondo
+  while( fscanf(fp, "%d,%f,%f,%f", &indice, &diametro, &altezza, &volume) == 4) // se non ho letto 4 elementi o il file non e' fatto come me lo aspetto o sono arrivato in fondo
   {
     printf("#%02d  %6.3f   %6.3f   %6.3f \n", indice, diametro, altezza, volume);
   }
