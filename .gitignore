@@ -1,7 +1,7 @@
 *
 !/**/
 !*.*
-
+*.depend
 build
 CMakeCache.txt
 CMakeFiles/
