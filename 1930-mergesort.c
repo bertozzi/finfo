@@ -7,7 +7,8 @@ void stampaarray(int *, int);
 void merge(int *, int *, int, int, int);  // funzione di appoggio per merge dei subset
 
 // prende in ingresso vettore da ordinare e relativa numerosita'
-void mergesort(int *a, int n){
+void mergesort(int *a, int n)
+{
   int i, m;
 
   // alloca il vettore ausiliario 
@@ -39,7 +40,8 @@ void mergesort(int *a, int n){
 
 
 
-void merge(int *a, int *extra, int start, int m, int end){
+void merge(int *a, int *extra, int start, int m, int end)
+{
   int i, j, k;
 
   // se il blocco "a sinistra" supera end non c'e' un blocco destro: nulla da fondere
