@@ -33,16 +33,14 @@ int main(int argc, char **argv){
 
 
   int b;
-  printf("Quale bit vuoi esaminare? ");
+  printf("Quale bit vuoi esaminare? [0,31]");
   scanf("%d", &b);
 
   int bit = (a >> b) & 1 ; 
-  // tramite (1<<b) creo un numero che dal punto di vista binario ha un solo '1' nella posizione 'b'.a
-  // con l'and bit a bit isolo il bit corrispondente di a
-  // l'ulteriore shift lo riporta nella posizione 'bit meno significativo'
-  // Semplificando potevo scrivere ((a >> b) & 1)
+  // con lo shift di 'b' posizioni porto il bit desiderato in posizione 0
+  // con l'and bit a bit isolo il bit in posizione 0
 
-  printf("Il bit %d di %d vale %d\n", b, a, bit); 
+  printf("Il bit di indice %d di %d vale %d\n", b, a, bit); 
 
   return 0;
 }
@@ -52,7 +50,7 @@ void stampabinario(int x)
 {
   // questa funzione stampa i 32 bit di un int
   // non conosciamo ancora il controllo di flusso, quindi e' scritta
-  // in maniera non particolarmente efficiente
+  // in maniera non particolarmente elegante
 
   // per stampare estraggo i singoli bit portandoli nella posizione meno significativa
   // mediante shift a destra e poi li isolo con un and bit a bit
