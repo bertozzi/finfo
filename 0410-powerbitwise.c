@@ -49,7 +49,7 @@ void stampabinario(int x)
 {
   // questa funzione stampa i 32 bit di un int
   // non conosciamo ancora il controllo di flusso, quindi e' scritta
-  // in maniera non particolarmente efficiente
+  // in maniera non particolarmente elegante
 
   // per stampare estraggo i singoli bit portandoli nella posizione meno significativa
   // mediante shift a destra e poi li isolo con un and bit a bit
