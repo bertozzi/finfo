@@ -4,7 +4,7 @@
 
 int main(int argc, char **argv){
 
-  int c=12345;
+  int c = 12345;
 
   printf("c vale %d\n", c);
 
