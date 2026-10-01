@@ -18,6 +18,8 @@ int main(int argc, char **argv){
   printf("m   = %d\n", m);
   printf("++m = %d\n", ++m);
 
+  getchar();
+
   m = m++; // FIXME risultato potenzialmente non definito!
   printf("m   = %d\n", m);
 

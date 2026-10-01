@@ -13,11 +13,11 @@ int main(int argc, char **argv){
   printf("Secondo numero: ");
   scanf("%d", &b);
 
-  printf("%d+%d vale %d\n", a, b, a+b);
-  printf("%d-%d vale %d\n", a, b, a-b);
-  printf("%d*%d vale %d\n", a, b, a*b);
-  printf("%d/%d vale %d\n", a, b, a/b);
-  printf("%d%%%d vale %d\n", a, b, a%b); // per stampare '%' devo usare sequenza di escape "%%"
+  printf("%d + %d vale %d\n", a, b, a+b);
+  printf("%d - %d vale %d\n", a, b, a-b);
+  printf("%d * %d vale %d\n", a, b, a*b);
+  printf("%d / %d vale %d\n", a, b, a/b);
+  printf("%d %% %d vale %d\n", a, b, a%b); // per stampare '%' devo usare sequenza di escape "%%"
 
 
   return 0;

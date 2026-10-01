@@ -7,7 +7,7 @@ int main(int argc, char **argv){
   int a = 15;
 
   int val1 = 0 < a < 10;            // FIXME the compiler gives us a warning, not an error!
-  int val2 = 0 < a && a < 10;
+  int val2 = (0 < a) && (a < 10);
 
   printf("(0 < a < 10)      con a = %3d is evaluated as: %d\n", a, val1);
   printf("(0 < a && a < 10) con a = %3d is evaluated as: %d\n", a, val2);
