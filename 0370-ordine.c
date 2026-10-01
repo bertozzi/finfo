@@ -13,7 +13,7 @@ int main()
   x = printf("A") + printf("B") * printf("C");
 
   // visto che * ha precedenza rispetto + prima verra'
-  // calcolata come printf("A") + (printf("B") * printf("C"))
+  // "valutata" come printf("A") + (printf("B") * printf("C"))
 
   return 0;
 }
