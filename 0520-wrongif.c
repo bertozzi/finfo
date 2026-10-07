@@ -8,8 +8,9 @@ int main(int argc, char **argv){
 
   printf("Inserite dividendo e divisore: ");
   scanf("%f%f", &dividendo, &divisore);
-
-  if(divisore != 0 );    //FIXME! il ';' vale come "istruzione nulla" e rende il tutto errato (ma purtroppo sintatticamente corretto)
+  
+  //FIXME! il ';' vale come "istruzione nulla" e rende il tutto errato (ma purtroppo sintatticamente corretto)
+  if(divisore != 0 );
     printf("Il risultato di %f/%f e' %f\n", dividendo, divisore, dividendo/divisore);
 
   return 0;

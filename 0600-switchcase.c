@@ -9,7 +9,8 @@ int main(int argc, char **argv){
   printf("Inserisci il voto che hai preso (intero [0,10]): ");
   scanf("%d", &voto);
 
-  switch(voto){
+  switch(voto)
+  {
     case 10: // confronto voto con 10 
       printf("Eccellente!\n");
       break; // serve per uscire dal blocco tra le { } 
