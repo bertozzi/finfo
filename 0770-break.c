@@ -8,7 +8,7 @@ int main (int argv, char **argc) {
   printf("Inserisci un numero intero positivo: ");
   scanf("%d", &n);
 
-  int i;
+  int i; // lo definisco fuori in quanto lo usero' anche a ciclo finito
   for(i = n - 1; i > 1; --i) // why > and not >= ?
   {
     if(!(n%i))

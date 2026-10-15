@@ -11,7 +11,7 @@ int main(int argc, char **argv){
   scanf("%d", &max);
 
   printf("Ok contiamo\n");
-  for (int x=max; x>0; --x) // il C99 permette questo (come il C++) 
+  for (int x = max; x > 0; --x) // il C99 permette questo (come il C++) 
   {
     printf("%d\n", x);
     sleep(1);
