@@ -12,3 +12,9 @@ int main(int argc, char **argv){
   return 0;
 }
 
+
+/* abs() signature is
+ *
+ * int abs(int j);
+ *
+*/
