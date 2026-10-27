@@ -10,7 +10,7 @@ int main(int argc, char **argv){
   printf("Inserisci il valore per il countdown: ");
   scanf("%d", &x);
 
-  while(x!=0) //XXX raggiungeremo sempre il valore 0?
+  while(x != 0) //XXX raggiungeremo sempre il valore 0? Come risolvo nel caso?
   {
     printf("%3d...\n", x);
     --x;       

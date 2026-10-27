@@ -8,6 +8,7 @@ CMakeFiles/
 Makefile
 cmake_install.cmake
 *.swp
+*.o
 esame.csv
 esame.dat
 numeri.txt
