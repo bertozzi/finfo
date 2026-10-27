@@ -1,4 +1,4 @@
-// if() nidificati
+// if() nidificati e uso {}
 #include<stdio.h>
 #include<stdlib.h>
 

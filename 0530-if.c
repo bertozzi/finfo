@@ -9,7 +9,8 @@ int main(int argc, char **argv){
   printf("Inserite dividendo e divisore: ");
   scanf("%f%f", &dividendo, &divisore);
 
-  if(divisore) // XXX era if(divisore != 0) ma il fatto di essere gia' di per se' differente da 0 rende inutile il confronto
+   // XXX era if(divisore != 0) ma il fatto di essere gia' di per se' differente da 0 rende inutile il confronto
+  if(divisore)
     printf("Il risultato di %f/%f e' %f\n", dividendo, divisore, dividendo/divisore);
 
   return 0;

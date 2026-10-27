@@ -1,5 +1,4 @@
-// dangling else
-
+// dangling else (sempre sbagliato ma evidenzia il funzionamento reale)
 #include<stdio.h>
 #include<stdlib.h>
 

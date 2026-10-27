@@ -10,6 +10,7 @@ int main(int argc, char **argv){
   for (unsigned char c = 0; c < 128; c++) { // ciclo su tutti i codici ASCII (non considero per semplicita' il codice ASCII esteso)
 
     printf("Il codice ASCII %3d [", c);
+
     if (c<' ' || c==127)
       printf("--");
     else
