@@ -4,14 +4,14 @@
 #include<time.h>
 
 int main(int argc, char **argv){
-  // si vuole simulare il lancio di n dati a 6 facce e vedere i risultati possibili
+  // si vuole simulare il lancio di n dadi a 6 facce e vedere i risultati possibili
 
-  srand(time(0));
+  srand(time(NULL));
 
   while(1) // la simulazione continua fino a che non la fermo io
   {
     int ndadi;
-    printf("Inserire il numero di dati da simulare (0 per terminare): ");
+    printf("Inserire il numero di dadi da simulare (0 per terminare): ");
     scanf("%d", &ndadi);
 
     if(!ndadi) // esco dal ciclo infinito se utente inserisce 0
