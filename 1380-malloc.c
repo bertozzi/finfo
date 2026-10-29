@@ -12,6 +12,11 @@ int *genera_array_lanci(int n)
     v[i] = rand()%6 + 1;
 
   printf("DEBUG: restituisco indirizzo %p\n", v);
+  printf("DEBUG: a quell'indirizzo ci sono i seguenti valori: ");
+  for(int i=0; i<n; ++i)
+    printf(" %d", v[i]);
+  printf("\n");
+
   return v;
 } // anche quando la funzione termina l'area allocata con malloc() rimane e non viene distrutta come nel caso dei VLA
 
