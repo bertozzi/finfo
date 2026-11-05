@@ -16,9 +16,14 @@ int main(int argc, char **argv){
   p = s;
   while(1)
   {
+    printf("Cerco il carattere %c in '%s': ", c, p);
     p = strchr(p, c);
-    if(!p) break;
-    printf("Ho trovato il carattere in posizione %ld (%s)\n", p-s, p);
+    if(!p)
+    {
+     printf("non trovato\n");
+     break;
+    }
+    printf("trovato in posizione %ld\n", p-s);
     ++p;
   }
 

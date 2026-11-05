@@ -23,7 +23,7 @@ int main(int argc, char **argv){
 /*
    OUTPUT
 
-   L'array 'lamiaprimastringa' contiene 21 elementi
+L'array 'lamiaprimastringa' contiene 21 elementi
 Che sono:
  0: l (108)
  1: a (97)

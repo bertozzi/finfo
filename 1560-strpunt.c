@@ -10,8 +10,8 @@ int main(int argc, char **argv){
   char *animal_punct  = "cane";
 
   // con le righe precedenti creo due array MA in realta' ci sono differenze
-  // nel caso di animale[] inizializzo un array con quel contenuto. 
-  // nel caso di *pesce inizializzo un array con l'indirizzo in memoria di dove si trova la stringa costante "tonno"
+  // nel caso di animal_array[] inizializzo un array con quel contenuto. 
+  // nel caso di *animal_pubct inizializzo un array con l'indirizzo in memoria di dove si trova la stringa costante "tonno"
 
   printf("animal_array = [%s]\n", animal_array);
   printf("animal_punct = [%s]\n", animal_punct);
