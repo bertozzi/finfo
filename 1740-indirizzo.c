@@ -12,9 +12,9 @@ void incrementadidue(int *a) // sto passando un puntatore, quindi un indirizzo
 
 int main(int argc, char **argv){
 
-  int i, x;
+  int x = 1;
 
-  for(i=1, x=1; i<10; i++)
+  for(int i = 1; i < 10; i++)
   {
     incrementadidue(&x); // devo passare l'indirizzo della variabile che posso ottenere con l'operatore &
 
