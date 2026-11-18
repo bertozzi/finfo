@@ -2,6 +2,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+
 void incrementadidue(int a)
 {
   a = a + 2; // il parametro di una funzione e' di fatto una variabile locale, viene creato ogni volta che la funzione viene invocata e distrutto ogni volta che la funzione termina
