@@ -1,4 +1,5 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 4.0)
+
 
 set(CMAKE_VERBOSE_MAKEFILE OFF)
 set_property(GLOBAL PROPERTY RULE_MESSAGES OFF)
