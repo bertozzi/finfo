@@ -4,10 +4,8 @@
 
 int main(int argc, char **argv){
 
-  int i;
-
   printf("La tua linea di comando e' composta dalle seguenti %d parole\n", argc);
-  for(i=0; i<argc; ++i)
+  for(int i = 0; i < argc; ++i)
   {
     printf(" #%d: %s\n", i, argv[i]);
   }

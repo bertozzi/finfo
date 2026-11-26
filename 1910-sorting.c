@@ -226,7 +226,7 @@ void mergesort(int *a, int n)
   int i, m;
 
   
-  int *extra = malloc(sizeof(*a) * n);       // auxiliary array
+  int *extra = malloc(sizeof(int) * n);       // auxiliary array
 
   for (m = 1; m < n; m += m)                 // m is the blocksize: 1, 2, 4 ,8...
     // i is the index of the first element of blocks "on the left side"
